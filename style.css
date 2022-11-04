@@ -79,22 +79,18 @@ html{
 }
 
 
-
-
-
-
 .container {
   width: fit-content;
   background-color: transparent;
   margin: 1em;
   transform-style: preserve-3d;
   border-radius: .5em;
-  box-shadow: 0px 0px 10px rgb(21, 3, 63);
   transition: transform .5s;
   }
 
 .container:hover {
   transform: rotateZ(360deg);
+  box-shadow: 0px 0px 10px white;
   transition: transform .5s;
 }
 
@@ -239,6 +235,8 @@ html{
 
 .proj-desc button{
   background-color:rgb(190, 166, 244);
+  color: white;
+  text-shadow: 0 0 5px white;
   transition: .5s;
   border-radius: .5em;
   border: .1em;
@@ -301,6 +299,8 @@ html{
 .btn button{
   background-color: rgb(190, 166, 244);
   box-shadow: 0 0 10px rgb(190, 166, 244);
+  color: white;
+  text-shadow: 0 0 5px white;
   height: 5em;
   width: 10em;
   margin: 1em;
@@ -318,4 +318,23 @@ html{
 
 .lang {
   color:rgb(137, 62, 137);
+}
+
+#contact button{
+  color: white;
+  text-shadow: 0 0 5px white;
+  background-color: rgb(190, 166, 244);
+  box-shadow: 0 0 10px rgb(190, 166, 244);
+  border: None;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  transition: .5s;
+}
+
+#contact button:hover{
+  background-color: crimson;
+  box-shadow: 0 0 10px crimson;
+  color: lavender;
+  transition: .5s;
 }
