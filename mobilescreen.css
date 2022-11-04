@@ -1,0 +1,76 @@
+@media screen and (max-width: 350px){
+  .proj-desc p{
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 400px){
+    .header{
+      width: fit-content;
+    }
+    ::-webkit-scrollbar {
+      width: 0em;
+    }
+    .sub_class {
+      font-size: small;
+      letter-spacing: .1em;
+      margin: .2em;
+      padding: .5em;
+      border-radius: .5em;
+    }
+    .page h1{
+    font-size: medium;
+    }
+    .proj-desc {
+      font-size: medium;
+    }
+    
+    
+}
+
+@media screen and (max-width: 500px){
+  .header{
+    width: fit-content;
+  }
+  ::-webkit-scrollbar {
+    width: 0em;
+  }
+  .sub_class {
+    font-size: small;
+    letter-spacing: .1em;
+    margin: 1em;
+    padding: 1em;
+    border-radius: .5em;
+  }
+  .back {
+      font-size: smaller;
+    }
+  .page h1{
+  font-size: medium;
+  }
+  
+  .proj-desc {
+  font-size: large;
+  }
+  .project-1{
+    height: 70%;
+    width: 100%;
+    margin-bottom: 1em;
+    perspective: 60em;
+  }
+  .Luke{
+    display: unset;
+  }
+}
+
+@media screen and (min-width: 700px){
+  .card{
+     height: 9em;
+     width: 9em;
+  }
+  #email p{
+     font-size: x-small;
+  }
+}
+
+

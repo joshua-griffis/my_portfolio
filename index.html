@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobilescreen.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="header" id="navbar">
+      
+        <a href="#projects" title="Projects"><img id="logo2" src="images/projects logo.png" alt="projects"></a>
+        <a href="#skills" title="Skills"><img id="logo3" src="images/skills logo.png" alt="skills"></a> 
+        <a href="#about_me" title="About Me"><img id="logo" src="images/logo.png" alt="Joshua Griffis, web developer"></a>
+        <a href="#contact" title="Contacts"><img id="logo4" src="images/contact logo.png" alt="contact"></a>
+        <a href="#resume" title="Resume"><img id="logo5" src="images/Resume icon.png" alt="resume"></a>
+      
+    </div>
+    <div class="myBtn">
+        <a href="#about_me" title="Go to top?"><img src="images/icon.png" alt="bear"></a>
+    </div>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("logo").style.height = "10%";
+            document.getElementById("logo").style.width = "10%";
+            document.getElementById("logo").style.marginLeft = "7.9%";
+            document.getElementById("logo2").style.height = "10%";
+            document.getElementById("logo2").style.width = "10%";
+            document.getElementById("logo2").style.marginLeft = "7.9%";
+            document.getElementById("logo3").style.height = "10%";
+            document.getElementById("logo3").style.width = "10%";
+            document.getElementById("logo3").style.marginLeft = "7.9%";
+            document.getElementById("logo4").style.height = "10%";
+            document.getElementById("logo4").style.width = "10%";
+            document.getElementById("logo4").style.marginLeft = "7.9%";
+            document.getElementById("logo5").style.height = "10%";
+            document.getElementById("logo5").style.width = "10%";
+            document.getElementById("logo5").style.marginLeft = "7.9%";
+          } else {
+            document.getElementById("logo").style.height = "18.5%";
+            document.getElementById("logo").style.width = "18.5%";
+            document.getElementById("logo").style.marginLeft = "0%";
+            document.getElementById("logo2").style.height = "18.5%";
+            document.getElementById("logo2").style.width = "18.5%";
+            document.getElementById("logo2").style.marginLeft = "0%";
+            document.getElementById("logo3").style.height = "18.5%";
+            document.getElementById("logo3").style.width = "18.5%";
+            document.getElementById("logo3").style.marginLeft = "0%";
+            document.getElementById("logo4").style.height = "18.5%";
+            document.getElementById("logo4").style.width = "18.5%";
+            document.getElementById("logo4").style.marginLeft = "0%";
+            document.getElementById("logo5").style.height = "18.5%";
+            document.getElementById("logo5").style.width = "18.5%";
+            document.getElementById("logo5").style.marginLeft = "0%";
+          }
+        }
+      
+    </script>
+    
+    
+    
+    <div class="page">
+
+        <div class="sub_class" id="about_me">
+
+            <h1><strong>&lt;/About Me&gt;</strong></h1>
+            <div class="card">
+
+                <div class="card-flip">
+
+                  <div class="front">
+                    <img src="images/logo.png" alt="logo">
+                  </div>
+
+                  <div class="back">
+                    <h3>Joshua <br>Griffis</h3>
+                    <p>(he/him)</p>
+                    <p>Software Developer</p>
+                    <p>Web Designer</p>
+                    <p>Artist</p>
+                  </div>
+
+                  <div class="mid">
+                    <button onclick="alert('You Caught Me! Congratulations! <3')"><img src="images/icon.png" alt="icon"></button>
+                  </div>
+
+                </div>
+
+            </div>
+            <h2><i>Hello!</i></h2>
+            <p>My name is <strong>Joshua Griffis</strong>, I am a <strong>Software Developer</strong> who specializes in both front end and back end. I will graduate in May, 2023, from <strong>Base Camp Coding Academy</strong>, a non-profit, 11 month coding program that teaches high school graduates how to code many different languages but also about professionalism!</p>
+        </div>
+
+        <div class="sub_class" id="projects">
+            <h1><strong>&lt;/Projects&gt;</strong></h1>
+
+            <div class="Luke">
+              <div class="project-1">
+                <div class="proj-flip">
+
+                  <div class="proj-img">
+                    <img src="images/haunted house.png" alt="haunted house">
+                  </div>
+
+                  <div class="proj-desc">
+                    
+                      <a href="http://replit.com/@JoshuaGriffis1/group-2-unit-project?v=1" target="_blank"><button>Demo</button></a>
+                    
+                   
+                      <a href="https://replit.com/@JoshuaGriffis1/group-2-unit-project?v=1#main.py" target="_blank"><button>Code</button></a>
+                   
+                    <p><strong>Unit I Project</strong></p>
+                    <p>A Choice-based short story where the user explores a haunted house!
+                    This was our first group project, I partnered with Anna Mcloed for this project!</p>
+                    <p class="lang">Languages used: Python</p>
+                  </div>
+
+                  <div class="mid">
+                    <img src="images/icon.png" alt="icon">
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="project-1">
+                <div class="proj-flip">
+
+                  <div class="proj-img">
+                    <img src="images/woah.webp" alt="Albert Einstein">
+                  </div>
+
+                  <div class="proj-desc">
+                    
+                    <a href="https://joshua-griffis.github.io/goat-project/"  target="_blank"><button>Demo</button></a>
+                    
+                   
+                    <a href="https://github.com/joshua-griffis/goat-project" target="_blank"><button>Code</button></a>
+                    <p><strong>G.O.A.T Project</strong></p>
+                    <p>A website about the Greatest Of All Time!
+                    This was our first html and css project!</p>
+                    <p class="lang">Languages used: HTML, CSS</p>
+                  </div>
+
+                  <div class="mid">
+                    <img src="images/icon.png" alt="icon">
+                  </div>
+
+                </div>
+              </div>  
+
+              <div class="project-1">
+                <div class="proj-flip">
+
+                  <div class="proj-img">
+                    <img src="images/Fanticy Invintory.png" alt="Fantasy Inventory">
+                  </div>
+
+                  <div class="proj-desc">
+                    
+                    <a onclick="alert('There isnt a Demo for this project just yet... sorry.')" ><button>Demo</button></a>
+                    
+                   
+                    <a href="https://github.com/joshua-griffis/unit-VI-project/tree/main/unit_4_project-master" target="_blank"><button>Code</button></a>
+                    <p><strong>Unit VI Project</strong></p>
+                    <p>Fantasy Inventory, an online shop that sells items from fiction!</p> 
+                    <p>Group Members: Dylan Herring, Brooks Austin, and Angela Reeves</p>
+                    <p class="lang">Languages used: Django, Python, HTML, CSS</p>
+                  </div>
+
+                  <div class="mid">
+                    <img src="images/icon.png" alt="icon">
+                  </div>
+
+                </div>
+              </div>
+            </div>  
+        </div>
+
+        
+        <div class="sub_class" id="skills">
+            <h1><strong>&lt;/Skills&gt;</strong></h1>
+
+            <div class="Luke">
+
+            <div class="container">
+                <div class="skills python"><p>print('Python')</p></div>
+            </div>
+
+           
+            <div class="container">
+                <div class="skills git"><p>/Github/</p></div>
+            </div>
+
+           
+            <div class="container">
+                <div class="skills html"><p>&lt;/HTML&gt;</p></div>
+            </div>
+            </div>
+
+            <div class="Luke">
+            <div class="container">
+                <div class="skills css"><p>.CSS {}</p></div>
+            </div>
+
+           
+            <div class="container">
+                
+                <div class="skills django"><p>{% Django %}</p></div>
+            </div>
+
+            
+            <div class="container">
+                <div class="skills js"><p>Java&lt;/Script&gt;</p></div>
+            </div>
+            </div>
+
+            <div class="Luke">
+            <div class="container">
+              <div class="skills java"><p>.println("Java");</p></div>
+            </div>
+
+           
+            <div class="container">
+              <div class="skills sql"><p>SELECT * FROM SQL</p></div>
+            </div>
+            </div>
+            
+            <div class="Luke">
+            <div class="container">
+              <div class="skills bootstrap"><p>class="Boot-Strap"</p></div>
+            </div>
+            </div>
+  
+        </div>
+
+        <div class="sub_class" id="contact">
+            <h1><strong>&lt;/Contact&gt;</strong></h1>
+            <div class="Luke">
+            <div class="project-1" >
+              <div class="proj-flip" id="email_card">
+
+                <div class="proj-img">
+                  <img src="images/email icon.png" alt="email">
+                </div>
+
+                <div class="proj-desc" id="email">
+                  <a href="mailto:joshuagiff03@gmail.com" target="_blank">
+                    <input type="button" href="" value="email me">
+                  </a>
+                  <p>joshuagiff03@gmail.com</p>
+                </div>
+
+                <div class="mid">
+                  <img src="images/icon.png" alt="icon">
+                </div>
+
+              </div>
+            </div>
+            <div class="project-1" >
+              <div class="proj-flip" id="linkedin_card">
+
+                <div class="proj-img">
+                  <img src="images/linkedin icon.png" alt="email">
+                </div>
+
+                <div class="proj-desc">
+                  <a href="https://www.linkedin.com/in/joshua-griffis-b2817a242/" target="_blank">
+                    <input type="button" href="" value="linkedin">
+                  </a>
+                  <p>Joshua Griff</p>
+                </div>
+
+                <div class="mid">
+                  <img src="images/icon.png" alt="icon">
+                </div>
+
+              </div>
+            </div>
+            <div class="project-1" >
+              <div class="proj-flip" id="github_card">
+
+                <div class="proj-img">
+                  <img src="images/github icon.png" alt="email">
+                </div>
+
+                <div class="proj-desc">
+                  <a href="https://github.com/joshua-griffis" target="_blank">
+                    <input type="button" href="" value="Github">
+                  </a>
+                  <p>joshua-griffis</p>
+                </div>
+
+                <div class="mid">
+                  <img src="images/icon.png" alt="icon">
+                </div>
+
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="sub_class" id="resume">       
+          <h1><strong>&lt;/Resume&gt;</strong></h1>
+          <div class="Luke">
+            <img src="images/Resume img.png" alt="resume">
+          </div>
+          <a class="btn" href="/images/Resume img.png" download="Joshua Griffis's Resume"><button title="Download?"><i class="fa fa-download"></i> Download</button></a>
+        </div>
+    </div>
+</body>
+</html>

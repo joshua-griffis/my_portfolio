@@ -1,0 +1,321 @@
+html{
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0px -50px 100px lavender;
+    margin: 0em;
+    border-radius: 1em;
+    position: sticky;
+    padding: 1em;
+    top: 0;
+    z-index: 9999;
+    transition: .5s;
+    transition-timing-function: ease-in-out;
+    justify-content: space-evenly;
+}
+
+.header:hover{
+    background-color: rgb(21, 3, 63);
+    box-shadow: inset 0px -50px 100px indigo;
+    margin: auto;
+    transition: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.header img{
+    margin: auto;
+    padding: 0em;
+    border-radius: 1em;
+    transition: .5s linear;
+}
+
+.header img:hover{
+    transition: .5s linear;
+    transition-timing-function: ease-in-out;
+    box-shadow: inset 0px 0px 50px lavender;
+}
+
+.page h1{
+    font-family:  'Blinker', sans-serif;
+    color: rgb(21, 3, 63);
+    font-size: x-large;
+    letter-spacing: 1em;
+    text-shadow: 0px 0px 5px rgb(190, 166, 244);
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: white; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(21, 3, 63); 
+    border-radius: 10px;
+    transition: .5s linear;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: indigo; 
+    transition: .5s linear;
+    transition-timing-function: ease-in-out;
+  }
+
+.sub_class {
+    font-size: x-large;
+    letter-spacing: .1em;
+    color: rgb(21, 3, 63);
+    box-shadow: inset 0px 0px 200px white;
+    margin: .5em;
+    padding: 2em;
+    border-radius: .5em;
+    background-color: rgb(201, 188, 233);
+}
+
+
+
+
+
+
+.container {
+  width: fit-content;
+  background-color: transparent;
+  margin: 1em;
+  transform-style: preserve-3d;
+  border-radius: .5em;
+  box-shadow: 0px 0px 10px rgb(21, 3, 63);
+  transition: transform .5s;
+  }
+
+.container:hover {
+  transform: rotateZ(360deg);
+  transition: transform .5s;
+}
+
+#skills {display: flexbox;}
+
+
+.skills {
+  text-align: right;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  color: white;
+  border-radius: .5em;
+}
+
+.python {background-color: darkcyan; padding: 1em;}
+.git {background-color: hotpink; padding: 1em;}
+.html {background-color: rgb(255, 166, 0); padding: 1em;}
+.css {background-color: #2196F3; padding: 1em;}
+.js {background-color: rgb(255, 92, 32); padding: 1em;}
+.django {background-color: rgb(55, 129, 55); padding: 1em;}
+.java {background-color: rgb(255, 217, 0); padding: 1em; color:rgb(21, 3, 3)} 
+.sql {background-color: rgb(59, 59, 255); padding: 1em;}
+.bootstrap {background-color: rgb(137, 62, 137); padding: 1em;}
+
+.card {
+  background-color: transparent;
+  perspective: 20em;
+  width: 12em;
+  height: 12em;
+  float: left;
+  margin-right: 1em;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+}
+
+.card-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0em;
+  text-align: center;
+  border-radius: 1em;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  box-shadow: 0px 0px 10px lavender;
+}
+.card:hover .card-flip{
+  transform: rotateY(540deg);
+}
+
+.front, .back{
+  position: absolute;
+  border-radius: 1em;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front{
+  background-image: radial-gradient( rgb(34, 10, 55), rgb(34, 10, 55), indigo);
+}
+
+.mid{
+  transform: rotateY(90deg);
+}
+.mid button{
+  background-color: transparent;
+  border: 0em;
+  cursor: pointer;
+}
+.back{
+  transform: rotateY(180deg);
+  margin: 0em;
+  padding: 0em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: medium;
+  background-color: white;
+  box-shadow: lavender;
+}
+
+.project-1 {
+  background-color: transparent;
+  perspective: 20em;
+  width: 13em;
+  height: 10em;
+  display: flex;
+  margin-right: 1em;
+}
+
+.project-1 img{
+  height: 100%;
+  width: 100%;
+  border-radius: 1em;
+}
+
+.proj-flip{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0em;
+  text-align: center;
+  border-radius: 1em;
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  box-shadow: 0px 0px 10px lavender;
+}
+
+.project-1:hover .proj-flip{
+  transform: rotateY(180deg);
+}
+
+.proj-img, .proj-desc{
+  position: absolute;
+  border-radius: 1em;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.proj-img {
+  background-image: radial-gradient( rgb(34, 10, 55), rgb(34, 10, 55), indigo);
+}
+
+.proj-desc {
+  transform: rotateY(180deg);
+  margin: 0em;
+  padding: 0em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: medium;
+  background-color: white;
+  box-shadow: lavender;
+}
+.proj-desc p, .proj-desc button{
+  margin: .5em;
+}
+
+.proj-desc button{
+  background-color:rgb(190, 166, 244);
+  transition: .5s;
+  border-radius: .5em;
+  border: .1em;
+  padding: .5em;
+  letter-spacing: .5em;
+  font-size: large;
+}
+
+.proj-desc button:hover{
+  background-color: crimson;
+  color: lavender;
+  transition: .5s;
+  box-shadow: 0px 0px 5px crimson;
+}
+
+.Luke {
+  display: flex;
+  justify-content: space-evenly;
+}
+#projects, #skills, #contact{
+  scroll-margin-top: 6.5em;
+}
+
+#about_me{
+  scroll-margin-top: 9em;
+}
+
+#email_card, #linkedin_card, #github_card{
+  box-shadow: inset 0px 0px 10px lavender;
+}
+
+.myBtn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 1em;
+  z-index: 999;
+  cursor: pointer;
+  scroll-margin-top: 9em;
+}
+
+.myBtn img{
+  width: 9em;
+  height: 8em;
+  opacity: 0.5;
+  transition: .5s;
+}
+
+.myBtn img:hover{
+  opacity: 1;
+  transition: .5s;
+}
+
+#resume img{
+  border-radius: .5em;
+  height: 90%;
+  width: 90%;
+}
+
+.btn button{
+  background-color: rgb(190, 166, 244);
+  box-shadow: 0 0 10px rgb(190, 166, 244);
+  height: 5em;
+  width: 10em;
+  margin: 1em;
+  border-radius: 1em;
+  transition: .5s;
+  border: None;
+}
+
+.btn button:hover{
+  background-color: crimson;
+  box-shadow: 0 0 10px crimson;
+  color: lavender;
+  transition: .5s;
+}
+
+.lang {
+  color:rgb(137, 62, 137);
+}
