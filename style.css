@@ -42,22 +42,22 @@ html{
 .page h1{
     font-family:  'Blinker', sans-serif;
     color: rgb(21, 3, 63);
-    font-size: x-large;
-    letter-spacing: 1em;
+    font-size: xx-large;
+    letter-spacing: .5em;
     text-shadow: 0px 0px 5px rgb(190, 166, 244);
 }
 
 ::-webkit-scrollbar {
-    width: .5em;
+    width: .4em;
   }
   
   ::-webkit-scrollbar-track {
-    background-color: white; 
+    background-color: transparent; 
   }
    
   ::-webkit-scrollbar-thumb {
     background: rgb(21, 3, 63); 
-    border-radius: 10px;
+    border-radius: .2em;
     transition: .5s linear;
   }
   
@@ -69,7 +69,7 @@ html{
 
 .sub_class {
     font-size: x-large;
-    letter-spacing: .1em;
+    letter-spacing: .09em;
     color: rgb(21, 3, 63);
     box-shadow: inset 0px 0px 200px white;
     margin: .5em;
@@ -78,15 +78,31 @@ html{
     background-color: rgb(201, 188, 233);
 }
 
+#pro {overflow-x: scroll;}
+
+#skills {
+  display: flex;
+  gap: 5em;
+  padding: 2em;
+}
+
+.time-line {
+  background-color: crimson;
+  position: relative;
+  width: 128em;
+  border-radius: .25em;
+  height: .5em;
+}
 
 .container {
-  width: fit-content;
+  width: 100%;
+  height: fit-content;
   background-color: transparent;
-  
-  margin: 1em;
   transform-style: preserve-3d;
   border-radius: .5em;
   transition: transform .5s;
+  color: white;
+  border-radius: .5em;
   }
 
 .container:hover {
@@ -96,26 +112,16 @@ html{
   transition: transform .5s;
 }
 
-#skills {display: flexbox;}
-
-
-.skills {
-  text-align: right;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  color: white;
-  border-radius: .5em;
-}
-
-.python {background-color: darkcyan; padding: 1em;}
-.git {background-color: hotpink; padding: 1em;}
-.html {background-color: rgb(255, 166, 0); padding: 1em;}
-.css {background-color: #2196F3; padding: 1em;}
-.js {background-color: rgb(255, 92, 32); padding: 1em;}
-.django {background-color: rgb(55, 129, 55); padding: 1em;}
-.java {background-color: rgb(255, 217, 0); padding: 1em;} 
-.sql {background-color: rgb(59, 59, 255); padding: 1em;}
-.bootstrap {background-color: rgb(137, 62, 137); padding: 1em;}
+#python {background-color: darkcyan; padding: 1em;}
+#git {background-color: hotpink; padding: 1em;}
+#html {background-color: rgb(255, 166, 0); padding: 1em;}
+#css {background-color: #2196F3; padding: 1em;}
+#js {background-color: rgb(255, 92, 32); padding: 1em;}
+#django {background-color: rgb(55, 129, 55); padding: 1em;}
+#java {background-color: rgb(255, 217, 0); padding: 1em;} 
+#sql {background-color: rgb(59, 59, 255); padding: 1em;}
+#bootstrap {background-color: rgb(137, 62, 137); padding: 1em;}
+#spring {background-color: rgb(83, 211, 86); padding: 1em;}
 
 .card {
   background-color: transparent;
@@ -181,10 +187,12 @@ html{
 .project-1 {
   background-color: transparent;
   perspective: 20em;
-  width: 13em;
-  height: 10em;
+  padding: 1em;
   display: flex;
-  margin-right: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 10em;
+  width: 13em;
   border-radius: .5em;
 }
 
@@ -192,12 +200,12 @@ html{
   height: 100%;
   width: 100%;
   border-radius: .5em;
-}
+  }
 
 .proj-flip{
   position: relative;
-  width: 100%;
   height: 100%;
+  width: 100%;
   margin: 0em;
   text-align: center;
   border-radius: 1em;
@@ -259,7 +267,11 @@ html{
 .Luke {
   display: flex;
   justify-content: space-evenly;
+  border-radius: 1em;
+  background-color: transparent;
 }
+
+
 #projects, #skills, #contact{
   scroll-margin-top: 6.5em;
 }
