@@ -1,66 +1,74 @@
 html{
-    background-color: white;
+    background-color: rgb(21, 3, 63);
     scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
 
 .header {
     background-color: transparent;
-    backdrop-filter: blur(5px);
-    box-shadow: inset 0px -50px 100px lavender;
+    box-shadow: inset 0px 100px 100px rgb(21, 3, 63);
+    filter: blur(5px);
     margin: 0em;
     border-radius: 1em;
     position: sticky;
     padding: 1em;
     top: 0;
-    z-index: 9999;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 89;
     transition: .5s;
     transition-timing-function: ease-in-out;
-    justify-content: space-evenly;
 }
 
 .header:hover{
-    background-color: rgb(21, 3, 63);
-    box-shadow: inset 0px -50px 100px indigo;
+    filter: blur(0px);
+    background-color: rgb(174, 18, 49);
+    box-shadow: inset 0px -150px 100px rgb(21, 3, 63);
     margin: auto;
-    transition: .5s;
+    transition: 1s;
     transition-timing-function: ease-in-out;
 }
-
-.header img{
-    margin: auto;
-    padding: 0em;
-    border-radius: 1em;
+.navimg {
+  height: 9em;
+  width: 9em;
+  
+}
+.header a, .header p{
+    color: lavender;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 10px;
+    border-radius: .5em;
+    text-align: center;
+    text-decoration: none;
     transition: .5s linear;
 }
 
-.header img:hover{
+.header p:hover {
     transition: .5s linear;
     transition-timing-function: ease-in-out;
-    box-shadow: inset 0px 0px 50px lavender;
+    color: crimson;
 }
 
 .page h1{
-    font-family:  'Blinker', sans-serif;
-    color: rgb(21, 3, 63);
+    color: lavenderblush;
     font-size: xx-large;
     letter-spacing: .5em;
-    text-shadow: 0px 0px 5px rgb(190, 166, 244);
+    text-shadow: 0px 0px 25px rgb(21, 3, 63);
 }
 
 ::-webkit-scrollbar {
     width: .4em;
   }
-  
   ::-webkit-scrollbar-track {
     background-color: transparent; 
   }
-   
   ::-webkit-scrollbar-thumb {
     background: rgb(21, 3, 63); 
     border-radius: .2em;
     transition: .5s linear;
   }
-  
   ::-webkit-scrollbar-thumb:hover {
     background: indigo; 
     transition: .5s linear;
@@ -70,13 +78,15 @@ html{
 .sub_class {
     font-size: x-large;
     letter-spacing: .09em;
-    color: rgb(21, 3, 63);
-    box-shadow: inset 0px 0px 200px white;
+    color: lavenderblush;
+    box-shadow: inset 0px 0px 100px rgb(21, 3, 63);
     margin: .5em;
     padding: 2em;
     border-radius: .5em;
-    background-color: rgb(201, 188, 233);
+    background-color: transparent;
+    transition: 1s;
 }
+
 
 #pro {overflow-x: scroll;}
 
@@ -143,10 +153,10 @@ html{
   height: 100%;
   margin: 0em;
   text-align: center;
-  border-radius: 1em;
+  border-radius: .5em;
   transition: transform 2s;
   transform-style: preserve-3d;
-  box-shadow: 0px 0px 10px lavender;
+  
 }
 .card:hover .card-flip{
   transform: rotateY(540deg);
@@ -154,14 +164,14 @@ html{
 
 .front, .back{
   position: absolute;
-  border-radius: 1em;
+  border-radius: .5em;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
 
 .front{
-  background-image: radial-gradient( rgb(34, 10, 55), rgb(34, 10, 55), indigo);
+  background-image: linear-gradient(rgb(21, 3, 63), rgb(21, 3, 63), rgb(21, 3, 63), crimson);
 }
 
 .mid{
@@ -180,8 +190,9 @@ html{
   height: 100%;
   text-align: center;
   font-size: medium;
+  color:rgb(190, 166, 244);
   background-color: white;
-  box-shadow: lavender;
+  box-shadow: 0 0 20px lavender;
 }
 
 .project-1 {
@@ -246,7 +257,7 @@ html{
 }
 
 .proj-desc button{
-  background-color:rgb(190, 166, 244);
+  background-color: indigo;
   color: white;
   text-shadow: 0 0 5px white;
   transition: .5s;
@@ -306,8 +317,8 @@ html{
 
 #resume img{
   border-radius: .5em;
-  height: 90%;
-  width: 90%;
+  height: 75%;
+  width: 75%;
 }
 
 .btn button{

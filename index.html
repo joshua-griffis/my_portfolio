@@ -17,58 +17,43 @@
 <body>
     <div class="header" id="navbar">
       
-        <a href="#projects" title="Projects"><img id="logo2" src="images/projects logo.png" alt="projects"></a>
-        <a href="#skills" title="Skills"><img id="logo3" src="images/skills logo.png" alt="skills"></a> 
-        <a href="#about_me" title="About Me"><img id="logo" src="images/logo.png" alt="Joshua Griffis, web developer"></a>
-        <a href="#contact" title="Contacts"><img id="logo4" src="images/contact logo.png" alt="contact"></a>
-        <a href="#resume" title="Resume"><img id="logo5" src="images/Resume icon.png" alt="resume"></a>
-      
+      <a href="#projects" title="Projects"><img class="navimg" src="images/projects logo copy.png" alt="moon"><p class="headerText">Projects</p></a>
+      <a href="#skills" title="Skills"><img class="navimg" src="images/skills logo copy.png" alt="moon"><p class="headerText">Skills</p></a>
+      <a href="#about_me" title="About Me"><img class="navimg" src="images/logo copy 2.png" alt="moon"><p class="headerText">About Me</p></a>
+      <a href="#resume" title="Resume"><img class="navimg" src="images/Resume icon copy.png" alt="moon"><p class="headerText">Resume</p></a>
+      <a href="#contact" title="Contacts"><img class="navimg" src="images/contact logo copy.png" alt="moon"><p class="headerText">Contacts</p></a>
     </div>
-    <div class="myBtn">
-        <a href="#about_me" title="Go to top?"><img src="images/icon.png" alt="bear"></a>
-    </div>
+    
+    
     <script>
+    
     window.onscroll = function() {scrollFunction()};
 
-        function scrollFunction() {
-          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("logo").style.height = "10%";
-            document.getElementById("logo").style.width = "10%";
-            document.getElementById("logo").style.marginLeft = "7.9%";
-            document.getElementById("logo2").style.height = "10%";
-            document.getElementById("logo2").style.width = "10%";
-            document.getElementById("logo2").style.marginLeft = "7.9%";
-            document.getElementById("logo3").style.height = "10%";
-            document.getElementById("logo3").style.width = "10%";
-            document.getElementById("logo3").style.marginLeft = "7.9%";
-            document.getElementById("logo4").style.height = "10%";
-            document.getElementById("logo4").style.width = "10%";
-            document.getElementById("logo4").style.marginLeft = "7.9%";
-            document.getElementById("logo5").style.height = "10%";
-            document.getElementById("logo5").style.width = "10%";
-            document.getElementById("logo5").style.marginLeft = "7.9%";
-          } else {
-            document.getElementById("logo").style.height = "18.5%";
-            document.getElementById("logo").style.width = "18.5%";
-            document.getElementById("logo").style.marginLeft = "0%";
-            document.getElementById("logo2").style.height = "18.5%";
-            document.getElementById("logo2").style.width = "18.5%";
-            document.getElementById("logo2").style.marginLeft = "0%";
-            document.getElementById("logo3").style.height = "18.5%";
-            document.getElementById("logo3").style.width = "18.5%";
-            document.getElementById("logo3").style.marginLeft = "0%";
-            document.getElementById("logo4").style.height = "18.5%";
-            document.getElementById("logo4").style.width = "18.5%";
-            document.getElementById("logo4").style.marginLeft = "0%";
-            document.getElementById("logo5").style.height = "18.5%";
-            document.getElementById("logo5").style.width = "18.5%";
-            document.getElementById("logo5").style.marginLeft = "0%";
+      function scrollFunction() {
+      
+        const imgs = document.getElementsByClassName("navimg"); 
+        
+        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+          for (let i = 0; i < imgs.length; i++) {
+            imgs[i].style.display = "none";
+            imgs[i].style.transition = "1s";
+            imgs[i].style.transitionTimingFunction = "linear";
+            console.log(imgs[i].style.transitionTimingFunction);
           }
-        }
+        } else {for (let i = 0; i < imgs.length; i++) {
+            imgs[i].style.display = "block";
+            imgs[i].style.transition = "1s";
+            imgs[i].style.transitionTimingFunction = "linear";
+          }
+        };
+        
+    };
       
     </script>
     
-    
+    <div class="myBtn">
+        <a href="#about_me" title="Go to top?"><img src="images/icon.png" alt="bear"></a>
+    </div>
     
     <div class="page">
 
@@ -98,7 +83,7 @@
                 </div>
 
             </div>
-            <h2><i>Hello!</i></h2>
+            <h2>Hello!</h2>
             <p>My name is <strong>Joshua Griffis</strong>, I am a <strong>Software Developer</strong> who specializes in both front end and back end. I am currently a student at <strong>Base Camp Coding Academy</strong>, an on-scholarship 12 month program that teaches high school graduates professionalism and software development! I will graduate in May of 2023 Next year!</p>
             <p>I have a <strong> passion for learning</strong> and interests in science, art, literature and in music. I hope to one day pursue my dream career which would be a job where I can learn more about the things that I am interested in and create art through the work that I do, either literally or metaphorically, and while making a lot of money doing so to provide for my family.</p>
         </div>
@@ -232,7 +217,7 @@
 
         </div>
      
-        <div class="sub_class" >
+        <div class="sub_class" name="skills">
             <h1><strong>&lt;/Skills&gt;</strong></h1>
             <div id="pro">
             <div class="time-line"></div>
