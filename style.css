@@ -65,12 +65,12 @@ html{
     background-color: transparent; 
   }
   ::-webkit-scrollbar-thumb {
-    background: rgb(21, 3, 63); 
+    background: crimson; 
     border-radius: .2em;
     transition: .5s linear;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: indigo; 
+    background: lavender; 
     transition: .5s linear;
     transition-timing-function: ease-in-out;
   }
@@ -88,50 +88,73 @@ html{
 }
 
 
-#pro {overflow-x: scroll;}
+
 
 #skills {
+  overflow:hidden;
+  width: 115em;
   display: flex;
   gap: 5em;
   padding: 2em;
+  
 }
 
-.time-line {
-  background-color: crimson;
-  position: relative;
-  width: 128em;
-  border-radius: .25em;
-  height: .5em;
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-115em, 0, 0); 
+  }
 }
 
 .container {
-  width: 100%;
   height: fit-content;
   background-color: transparent;
-  transform-style: preserve-3d;
   border-radius: .5em;
   transition: transform .5s;
-  color: white;
+  text-align: center;
   border-radius: .5em;
+  animation: slide 20s linear infinite;
   }
 
-.container:hover {
-  transform: rotateZ(360deg);
-  text-shadow: 0 0 5px white;
-  box-shadow: 0px 0px 10px white;
-  transition: transform .5s;
+.container img{
+  height: 9em;
+  width: 9em;
 }
 
-#python {background-color: darkcyan; padding: 1em;}
-#git {background-color: hotpink; padding: 1em;}
-#html {background-color: rgb(255, 166, 0); padding: 1em;}
-#css {background-color: #2196F3; padding: 1em;}
-#js {background-color: rgb(255, 92, 32); padding: 1em;}
-#django {background-color: rgb(55, 129, 55); padding: 1em;}
-#java {background-color: rgb(255, 217, 0); padding: 1em;} 
-#sql {background-color: rgb(59, 59, 255); padding: 1em;}
-#bootstrap {background-color: rgb(137, 62, 137); padding: 1em;}
-#spring {background-color: rgb(83, 211, 86); padding: 1em;}
+.container p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1em;
+  padding: .2em;
+  text-shadow: 0 0 5px initial;
+  transition:  .5s;
+}
+
+.container p:hover {
+  /* box-shadow: inset 0px 0px 10px white; */
+  transition:  .5s;
+  -webkit-backdrop-filter: blur(10px);
+  border-color: initial;
+  border-style: solid;
+}
+
+
+
+
+#python {color: rgb(0, 255, 255);}
+#git {color: rgb(255, 97, 150);}
+#html {color: rgb(255, 123, 0);}
+#css {color: rgb(34, 200, 255);}
+#js {color: rgb(255, 204, 0);}
+#django {color: rgb(0, 255, 0);}
+#java {color: yellow;} 
+#sql {color: blue;}
+#bootstrap {color: purple;}
+#spring {color: rgb(83, 211, 86);}
 
 .card {
   background-color: transparent;
@@ -171,8 +194,9 @@ html{
 }
 
 .front{
-  background-image: linear-gradient(rgb(21, 3, 63), rgb(21, 3, 63), rgb(21, 3, 63), crimson);
+  background-color: transparent;
 }
+
 
 .mid{
   transform: rotateY(90deg);
@@ -190,9 +214,9 @@ html{
   height: 100%;
   text-align: center;
   font-size: medium;
-  color:rgb(190, 166, 244);
+  color:rgb(21, 3, 63);
   background-color: white;
-  box-shadow: 0 0 20px lavender;
+  box-shadow: 0 0 20px lavenderblush;
 }
 
 .project-1 {
@@ -211,6 +235,7 @@ html{
   height: 100%;
   width: 100%;
   border-radius: .5em;
+  object-fit: cover;
   }
 
 .proj-flip{
@@ -222,7 +247,7 @@ html{
   border-radius: 1em;
   transition: transform .5s;
   transform-style: preserve-3d;
-  box-shadow: 0px 0px 10px lavender;
+  /* box-shadow: 0px 0px .1em lavender; */
 }
 
 .project-1:hover .proj-flip{
@@ -248,6 +273,7 @@ html{
   height: 100%;
   text-align: center;
   font-size: medium;
+  color: rgb(21, 3, 63);
   background-color: white;
   box-shadow: lavender;
   overflow-y: scroll;
@@ -257,8 +283,8 @@ html{
 }
 
 .proj-desc button{
-  background-color: indigo;
-  color: white;
+  background-color: rgb(21, 3, 63);
+  color: lavender;
   text-shadow: 0 0 5px white;
   transition: .5s;
   border-radius: .5em;
@@ -306,7 +332,7 @@ html{
 .myBtn img{
   width: 7em;
   height: 6em;
-  opacity: 0.5;
+  opacity: 0.3;
   transition: .5s;
 }
 
@@ -322,9 +348,9 @@ html{
 }
 
 .btn button{
-  background-color: rgb(190, 166, 244);
-  box-shadow: 0 0 10px rgb(190, 166, 244);
+  background-color: transparent;
   color: white;
+  font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-shadow: 0 0 5px white;
   height: 5em;
   width: 10em;
@@ -333,6 +359,7 @@ html{
   transition: .5s;
   border: None;
 }
+
 
 .btn button:hover{
   background-color: crimson;
@@ -348,9 +375,7 @@ html{
 #contact button{
   color: white;
   text-shadow: 0 0 5px white;
-  background-color: rgb(190, 166, 244);
-  box-shadow: 0 0 10px rgb(190, 166, 244);
- 
+  background-color: transparent;
   border: None;
   border-radius: 50%;
   height: 2em;
