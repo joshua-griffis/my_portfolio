@@ -30,17 +30,25 @@ html{
     transition: 1s;
     transition-timing-function: ease-in-out;
 }
+
 .navimg {
-  height: 9em;
-  width: 9em;
-  
+  width: 70%;
+  height: 70%;
+  text-align: center;
 }
+
+.navimg img{
+  object-fit: cover;
+  text-align: center;
+}
+
 .header a, .header p{
     color: lavender;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 10px;
     border-radius: .5em;
     text-align: center;
+    align-items: center;
     text-decoration: none;
     transition: .5s linear;
 }
