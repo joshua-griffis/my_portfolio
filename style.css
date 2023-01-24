@@ -91,22 +91,13 @@ html{
 
 
 #skills {
-  overflow:hidden;
-  width: 115em;
+  overflow: scroll;
+  width: 100%;
   display: flex;
-  gap: 5em;
-  padding: 2em;
-  
+  gap: 2em;
 }
 
-@keyframes slide {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-115em, 0, 0); 
-  }
-}
+
 
 .container {
   height: fit-content;
@@ -115,7 +106,6 @@ html{
   transition: transform .5s;
   text-align: center;
   border-radius: .5em;
-  animation: slide 20s linear infinite;
   }
 
 .container img{
@@ -124,10 +114,10 @@ html{
 }
 
 .container p{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
   border-radius: 1em;
   padding: .2em;
   text-shadow: 0 0 5px initial;
@@ -136,7 +126,7 @@ html{
 
 .container p:hover {
   /* box-shadow: inset 0px 0px 10px white; */
-  transition:  .5s;
+  transition: .5s;
   -webkit-backdrop-filter: blur(10px);
   border-color: initial;
   border-style: solid;
