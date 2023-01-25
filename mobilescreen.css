@@ -1,4 +1,4 @@
-@media screen and (max-width: 300px){
+/* @media screen and (max-width: 300px){
   .proj-desc p, .proj-desc button{font-size: 10%;}
   .sub_class h1{font-size: xx-small;}
 }
@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 400px){
     .header{width: fit-content;}
-    ::-webkit-scrollbar {width: 0em;}
+    ::-webkit-scrollbar {width: 0em;} 
     .sub_class {
       font-size: small;
       letter-spacing: .1em;
@@ -19,19 +19,18 @@
     }
     .page h1{font-size: medium;}
     .proj-desc p, .proj-desc button{font-size: 70%;}
-   
 }
 
-@media screen and (max-width: 500px){
+ @media screen and (max-width: 500px){
   .header{width: fit-content;}
   ::-webkit-scrollbar {width: 0em;}
   .sub_class {
     font-size: small;
-    letter-spacing: .1em;
+     letter-spacing: .1em;
     margin: 1em;
     padding: 1em;
     border-radius: .5em;
-  }
+  } 
   .back {font-size: smaller;}
   .page h1{font-size: medium;}
   
@@ -43,7 +42,7 @@
     perspective: 60em;
   }
   .Luke{display: unset;}
-}
+ }
 
 @media screen and (min-width: 700px){
   .card{
@@ -52,4 +51,4 @@
   }
 }
 
-
+ */

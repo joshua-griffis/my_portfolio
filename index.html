@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Portfolio</title>
 </head>
+
 <body>
+
+    <!-- Header/navigation bar -->
     <div class="header" id="navbar">
       
       <a href="#projects" title="Projects"><img class="navimg" src="images/logos/projects logo copy.png" alt="cloud"><p class="headerText">Projects</p></a>
@@ -24,9 +28,8 @@
       <a href="#contact" title="Contacts"><img class="navimg" src="images/logos/contact logo copy.png" alt="cloud"><p class="headerText">Contacts</p></a>
     </div>
     
-    
+    <!-- Makes the header pictures disappear when you scroll -->
     <script>
-    
     window.onscroll = function() {scrollFunction()};
 
       function scrollFunction() {
@@ -46,55 +49,68 @@
             imgs[i].style.transitionTimingFunction = "linear";
           }
         };
-        
     };
-      
     </script>
     
+    <!-- scroll to top button -->
     <div class="myBtn">
         <a href="#about_me" title="Go to top?"><img src="images/logos/icon.png" alt="bear"></a>
     </div>
     
+    <!-- Sections -->
     <div class="page">
 
+        <!-- About Me Section -->
         <div class="sub_class" id="about_me">
 
-            <h1><strong>&lt;/About Me&gt;</strong></h1>
+            <h1><strong>About Me</strong></h1>
+
+            <!-- Name Card -->
             <div class="card">
 
-                <div class="card-flip">
+              <div class="card-flip">
 
-                  <div class="front">
-                    <img src="images/logos/logo.png" alt="logo">
-                  </div>
-
-                  <div class="back">
-                    <h3>Joshua <br>Griffis</h3>
-                    <p>(he/him)</p>
-                    <p>Software Developer</p>
-                    <p>Web Designer</p>
-                    <p>Artist</p>
-                  </div>
-
-                  <div class="mid">
-                    <button onclick="alert('You Caught Me! Congratulations! <3')"><img src="images/logos/icon.png" alt="icon"></button>
-                  </div>
-
+                <!-- Front side of the card -->
+                <div class="front">
+                  <img src="images/logos/logo.png" alt="logo">
                 </div>
 
+                <!-- Back side of the card -->
+                <div class="back">
+                  <h3>Joshua <br>Griffis</h3>
+                  <p>(he/him)</p>
+                  <p>Software Developer</p>
+                  <p>Web Designer</p>
+                  <p>Artist</p>
+                </div>
+
+                <!-- Teddy bear in the middle of the card -->
+                <div class="mid">
+
+                  <!-- Ester egg button ;) -->
+                  <button onclick="alert('You Caught Me?! :O You must have a really good eye!! Thank you for checking out my portfolio!!! <3')"><img src="images/logos/icon.png" alt="icon"></button>
+                </div>
+
+              </div>
+
             </div>
+
+            <!-- Introduction and Description -->
             <h2>Hello!</h2>
             <p>My name is <strong>Joshua Griffis</strong>, I am a <strong>Software Developer</strong> who specializes in both front end and back end. I am currently a student at <strong>Base Camp Coding Academy</strong>, an on-scholarship 12 month program that teaches high school graduates professionalism and software development! I will graduate in May of 2023 Next year!</p>
             <p>I have a <strong> passion for learning</strong> and interests in science, art, literature and in music. I hope to one day pursue my dream career which would be a job where I can learn more about the things that I am interested in and create art through the work that I do, either literally or metaphorically, and while making a lot of money doing so to provide for my family.</p>
         </div>
 
+        <!-- Projects Section -->
         <div class="sub_class" id="projects">
-            <h1><strong>&lt;/Projects&gt;</strong></h1>
+            <h1><strong>Projects</strong></h1>
             <p>Warning: Some projects do not have a demo just yet.</p>
 
+            <!-- Top half -->
             <div class="Luke">
 
-              <div class="project-1">
+              <!-- Project i -->
+              <div class="project">
                 <div class="proj-flip">
 
                   <div class="proj-img"><img src="images/red_hand.png" alt="Red Hand"></div>
@@ -116,7 +132,8 @@
                 </div>
               </div>
 
-              <div class="project-1">
+              <!-- Project ii -->
+              <div class="project">
                 <div class="proj-flip">
 
                   <div class="proj-img"><img src="images/crud.png" alt="Red Hand"></div>
@@ -138,7 +155,8 @@
                 </div>
               </div>
 
-              <div class="project-1">
+              <!-- Project iii -->
+              <div class="project">
                 <div class="proj-flip">
 
                   <div class="proj-img"><img src="images/fanticy.png" alt="Fantasy Inventory"></div>
@@ -163,9 +181,11 @@
 
             </div>
 
+            <!-- Bottom half -->
             <div class="Luke">
 
-              <div class="project-1">
+              <!-- Project iv -->
+              <div class="project">
                 <div class="proj-flip">
 
                   <div class="proj-img"><img src="images/logos/logo.png" alt="moon"></div>
@@ -186,7 +206,8 @@
                 </div>
               </div>
 
-              <div class="project-1">
+              <!-- Project v -->
+              <div class="project">
                 <div class="proj-flip">
 
                   <div class="proj-img"><img src="images/woah.webp" alt="Albert Einstein"></div>
@@ -210,7 +231,8 @@
                 </div>
               </div>  
 
-               <div class="project-1">
+              <!-- Project vi -->
+               <div class="project">
                 <div class="proj-flip">
 
                   <div class="proj-img"><img src="images/haunted house.png" alt="haunted house"></div>
@@ -237,12 +259,12 @@
             </div>
 
         </div>
-     
+        
+        <!-- Skills Section -->
         <div class="sub_class" name="skills">
-            <h1><strong>&lt;/Skills&gt;</strong></h1>
+            <h1><strong>Skills</strong></h1>
             
-           
-            
+            <!-- Languages display -->
             <div id="skills">
               
               <div class="container" id="python" title="Python"><img src="images/logos/contact logo copy.png" alt="cloud"><p>print("<b>Python</b>")</p></div>
@@ -253,7 +275,7 @@
               
               <div class="container" id="css" title="CSS"><img src="images/logos/skills logo copy.png" alt="cloud"><p>.<b>CSS</b>{}</p></div>
             
-              <div class="container" id="django" title="Django"><img src="images/logos/contact logo copy.png" alt="cloud"><p>{%<b>Django</b>%}</p></div>
+              <div class="container" id="django" title="Django"><img src="images/logos/contact logo copy.png" alt="cloud"><p>{% <b>Django</b> %}</p></div>
               
               <div class="container" id="js" title="JavaScript"><img src="images/logos/projects logo copy.png" alt="cloud"><p><b>Java</b>&lt;/<b>Script</b>&gt;</p></div>
 
@@ -268,22 +290,101 @@
             </div>
         </div>
 
-        <div class="sub_class" id="resume">       
-          <h1><strong>&lt;/Resume&gt;</strong></h1>
+        <!-- Resume Section -->
+        <div class="sub_class" id="resume">
+
+          <h1><strong>Resume</strong></h1>
           <div class="Luke">
-            <img src="images/Resume img.png" alt="resume">
+
+            <!-- Resume image -->
+            <img id="resume_img" src="images/Resume img.png" alt="resume">
           </div>
-          <a class="btn" href="/images/Resume img.png" download="Joshua Griffis's Resume"><button title="Download my resume?"><i class="fa fa-download"></i> Download</button></a>
+
+          <script>
+            function magnify(imgID, zoom) {
+              var img, glass, w, h, bw;
+              img = document.getElementById(imgID);
+              /*create magnifier glass:*/
+              glass = document.createElement("DIV");
+              glass.setAttribute("class", "img-magnifier-glass");
+              /*insert magnifier glass:*/
+              img.parentElement.insertBefore(glass, img);
+              /*set background properties for the magnifier glass:*/
+              glass.style.backgroundImage = "url('" + img.src + "')";
+              glass.style.backgroundRepeat = "no-repeat";
+              glass.style.backgroundSize = (img.width * zoom) + "vw" + (img.height * zoom) + "vw";
+              bw = 3;
+              w = glass.offsetWidth / 2;
+              h = glass.offsetHeight / 2;
+              /*execute a function when someone moves the magnifier glass over the image:*/
+              glass.addEventListener("mousemove", moveMagnifier);
+              img.addEventListener("mousemove", moveMagnifier);
+              /*and also for touch screens:*/
+              glass.addEventListener("touchmove", moveMagnifier);
+              img.addEventListener("touchmove", moveMagnifier);
+              function moveMagnifier(e) {
+                var pos, x, y;
+                /*prevent any other actions that may occur when moving over the image*/
+                e.preventDefault();
+                /*get the cursor's x and y positions:*/
+                pos = getCursorPos(e);
+                x = pos.x;
+                y = pos.y;
+                /*prevent the magnifier glass from being positioned outside the image:*/
+                if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+                if (x < w / zoom) {x = w / zoom;}
+                if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+                if (y < h / zoom) {y = h / zoom;}
+                /*set the position of the magnifier glass:*/
+                glass.style.left = (x - w) + "vw";
+                glass.style.top = (y - h) + "vw";
+                /*display what the magnifier glass "sees":*/
+                glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "vw -" + ((y * zoom) - h + bw) + "vw";
+              }
+              function getCursorPos(e) {
+                var a, x = 0, y = 0;
+                e = e || window.event;
+                /*get the x and y positions of the image:*/
+                a = img.getBoundingClientRect();
+                /*calculate the cursor's x and y coordinates, relative to the image:*/
+                x = e.pageX - a.left;
+                y = e.pageY - a.top;
+                /*consider any page scrolling:*/
+                x = x - window.pageXOffset;
+                y = y - window.pageYOffset;
+                return {x : x, y : y};
+              }
+            }
+          </script>
+
+          <!-- Initiate Magnify Function
+          with the id of the image, and the strength of the magnifier glass: -->
+          <!-- <script>
+          magnify("resume_img", 10);
+          </script> -->
+
+          <!-- Download button -->
+          <a href="/images/Resume img.png" download="Joshua Griffis's Resume" title="Download my resume?"><div class="btn"><p class="fa fa-download"> Download</p></div> </a>
+
         </div>   
 
+        <!-- Contacts Section -->
         <div class="sub_class" id="contact">
-            <h1><strong>&lt;/Contact&gt;</strong></h1>
+            <h1><strong>Contact</strong></h1>
             <p>joshuagiff03@gmail.com</p>
+
+            <!-- Email link button -->
             <a href="mailto:joshuagiff03@gmail.com" title="Message me through Email"><button class="fa fa-google"></button></a>
+
+            <!-- Github link button -->
             <a href="https://github.com/joshua-griffis" target="_blank" title="Checkout my Projects on Github"><button class="fa fa-github"></button></a>
+
+            <!-- Linkedin link button -->
             <a href="https://www.linkedin.com/in/joshua-griffis-b2817a242/" target="_blank" title="Connect to my Linkedin"><button class="fa fa-linkedin"></button></a>
         
       </div>
+
     </div>
+
 </body>
 </html>

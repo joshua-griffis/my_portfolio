@@ -1,19 +1,19 @@
+/* the entire website page */
 html{
     background-color: rgb(21, 3, 63);
     scroll-behavior: smooth;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
-
+/* the header/navigation bar */
 .header {
     background-color: transparent;
     box-shadow: inset 0px 100px 100px rgb(21, 3, 63);
     filter: blur(5px);
-    margin: 0em;
-    border-radius: 1em;
+    margin: 0vw;
+    border-radius: 1vw;
     position: sticky;
-    padding: 1em;
+    padding: 1vw;
     top: 0;
     display: flex;
     justify-content: space-evenly;
@@ -22,6 +22,7 @@ html{
     transition-timing-function: ease-in-out;
 }
 
+/* makes the header/nav visible and changes the color on hover */
 .header:hover{
     filter: blur(0px);
     background-color: rgb(174, 18, 49);
@@ -31,41 +32,42 @@ html{
     transition-timing-function: ease-in-out;
 }
 
+/* images in the header/nav */
 .navimg {
-  width: 70%;
-  height: 70%;
+  width: 12vw;
+  height: 12vw;
   text-align: center;
 }
 
-.navimg img{
-  object-fit: cover;
-  text-align: center;
-}
-
+/* the link and text in the header */
 .header a, .header p{
     color: lavender;
+    font-size: 1.5vw;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 10px;
-    border-radius: .5em;
+    border-radius: .5vw;
     text-align: center;
     align-items: center;
     text-decoration: none;
     transition: .5s linear;
 }
 
+/* changes the color of the header text on hover */
 .header p:hover {
     transition: .5s linear;
     transition-timing-function: ease-in-out;
     color: crimson;
 }
 
+/* the titles in each section */
 .page h1{
     color: lavenderblush;
-    font-size: xx-large;
+    font-size: 3vw;
     letter-spacing: .5em;
     text-shadow: 0px 0px 25px rgb(21, 3, 63);
 }
 
+/* the scroll bar customization */
 ::-webkit-scrollbar {
     width: .4em;
   }
@@ -83,55 +85,130 @@ html{
     transition-timing-function: ease-in-out;
   }
 
+/* each individual section */
 .sub_class {
-    font-size: x-large;
-    letter-spacing: .09em;
+    font-size: 1.5vw;
+    letter-spacing: .09vw;
     color: lavenderblush;
     box-shadow: inset 0px 0px 100px rgb(21, 3, 63);
-    margin: .5em;
-    padding: 2em;
-    border-radius: .5em;
+    margin: .5vw;
+    padding: 2vw;
+    border-radius: .5vw;
     background-color: transparent;
     transition: 1s;
 }
 
+/* the name card in the about me section */
+.card {
+  background-color: transparent;
+  perspective: 30vw;
+  width: 18vw;
+  height: 18vw;
+  float: left;
+  margin-right: 1vw;
+}
 
+/* the card picture on the front */
+.card img{
+  width: 100%;
+  height: 100%;
+}
 
+/* the box that the card sits in */
+.card-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0vw;
+  text-align: center;
+  border-radius: .5vw;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  font-size: 1vw;
+}
 
+/* flips the card on hover */
+.card:hover .card-flip{
+  transform: rotateY(540deg);
+}
+
+/* the front and back of the card */
+.front, .back{
+  position: absolute;
+  border-radius: .5vw;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* front of the card */
+.front{
+  background-color: transparent;
+}
+
+/* the teddy bear icon in the middle of the card */
+.mid{
+  transform: rotateY(90deg);
+}
+
+.mid button{
+  background-color: transparent;
+  border: 0vw;
+  cursor: pointer;
+}
+
+/* the back of the card */
+.back{
+  transform: rotateY(180deg);
+  margin: 0vw;
+  padding: 0vw;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.3vw;
+  color:rgb(21, 3, 63);
+  background-color: white;
+  box-shadow: 0 0 20px lavenderblush;
+}
+
+/* all of the skills in skills section */
 #skills {
   overflow: scroll;
   width: 100%;
   display: flex;
-  gap: 2em;
+  gap: 2vw;
 }
 
 
-
+/* the box that holds each individaul skill */
 .container {
   height: fit-content;
   background-color: transparent;
-  border-radius: .5em;
+  border-radius: .5vw;
   transition: transform .5s;
   text-align: center;
-  border-radius: .5em;
+  border-radius: .5vw;
   }
 
+/* the pictures in each skill box */
 .container img{
-  height: 9em;
-  width: 9em;
+  height: 15vw;
+  width: 15vw;
 }
 
+/* the text in each skill box */
 .container p{
   /* position: absolute; */
   /* top: 50%; */
   /* left: 50%; */
   /* transform: translate(-50%, -50%); */
-  border-radius: 1em;
-  padding: .2em;
+  border-radius: 1vw;
+  padding: .2vw;
   text-shadow: 0 0 5px initial;
   transition:  .5s;
 }
 
+/* highlights text on hover */
 .container p:hover {
   /* box-shadow: inset 0px 0px 10px white; */
   transition: .5s;
@@ -140,9 +217,7 @@ html{
   border-style: solid;
 }
 
-
-
-
+/* the individaul colors of the skills */
 #python {color: rgb(0, 255, 255);}
 #git {color: rgb(255, 97, 150);}
 #html {color: rgb(255, 123, 0);}
@@ -154,119 +229,64 @@ html{
 #bootstrap {color: purple;}
 #spring {color: rgb(83, 211, 86);}
 
-.card {
+/* each project in the projects section */
+.project {
   background-color: transparent;
-  perspective: 20em;
-  width: 12em;
-  height: 12em;
-  float: left;
-  margin-right: 1em;
-}
-
-.card img{
-  width: 100%;
-  height: 100%;
-}
-
-.card-flip {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin: 0em;
-  text-align: center;
-  border-radius: .5em;
-  transition: transform 2s;
-  transform-style: preserve-3d;
-  
-}
-.card:hover .card-flip{
-  transform: rotateY(540deg);
-}
-
-.front, .back{
-  position: absolute;
-  border-radius: .5em;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.front{
-  background-color: transparent;
-}
-
-
-.mid{
-  transform: rotateY(90deg);
-}
-.mid button{
-  background-color: transparent;
-  border: 0em;
-  cursor: pointer;
-}
-.back{
-  transform: rotateY(180deg);
-  margin: 0em;
-  padding: 0em;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: medium;
-  color:rgb(21, 3, 63);
-  background-color: white;
-  box-shadow: 0 0 20px lavenderblush;
-}
-
-.project-1 {
-  background-color: transparent;
-  perspective: 20em;
-  padding: 1em;
+  perspective: 30vw;
+  padding: 1vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 10em;
-  width: 13em;
-  border-radius: .5em;
+  height: 20vw;
+  width: 23vw;
+  border-radius: .5vw;
 }
 
-.project-1 img{
+/* the picture of the projects */
+.project img{
   height: 100%;
   width: 100%;
-  border-radius: .5em;
+  border-radius: .5vw;
   object-fit: cover;
   }
 
+ /* the box the project cards sit in */
 .proj-flip{
   position: relative;
   height: 100%;
   width: 100%;
-  margin: 0em;
+  margin: 0vw;
   text-align: center;
-  border-radius: 1em;
+  border-radius: 1vw;
   transition: transform .5s;
   transform-style: preserve-3d;
-  /* box-shadow: 0px 0px .1em lavender; */
+  /* box-shadow: 0px 0px .1vw lavender; */
 }
 
-.project-1:hover .proj-flip{
+/* flips the project card on hover */
+.project:hover .proj-flip{
   transform: rotateY(180deg);
 }
 
+/* the front (project picture) and back (project description) of the card */
 .proj-img, .proj-desc{
   position: absolute;
-  border-radius: .5em;
+  border-radius: .5vw;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
+
+/* the front of the project card (picture) */
 .proj-img {
   background-color: black;
 }
 
+/* the back of the project card (description) */
 .proj-desc {
   transform: rotateY(180deg);
-  margin: 0em;
-  padding: 0em;
+  margin: 0vw;
+  padding: 0vw;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -276,22 +296,32 @@ html{
   box-shadow: lavender;
   overflow-y: scroll;
 }
-.proj-desc p, .proj-desc button{
-  margin: .5em;
+
+/* different color for lanuguages used in project discription */
+.lang {
+  color:rgb(137, 62, 137);
 }
 
+/* the project descritption text and buttons */
+.proj-desc p, .proj-desc button{
+  margin: .5vw;
+  font-size: 1.5vw;
+}
+
+/* the project buttons */
 .proj-desc button{
   background-color: rgb(21, 3, 63);
   color: lavender;
   text-shadow: 0 0 5px white;
   transition: .5s;
-  border-radius: .5em;
-  border: .1em;
-  padding: .5em;
-  letter-spacing: .5em;
-  font-size: large;
+  border-radius: .5vw;
+  border: .1vw;
+  padding: .5vw;
+  letter-spacing: .5vw;
+  font-size: 1.5vw;
 }
 
+/* makes the button glow on hover */
 .proj-desc button:hover{
   background-color: crimson;
   box-shadow: 0px 0px 5px crimson;
@@ -299,88 +329,100 @@ html{
   
 }
 
+/* organizes html elements in flex display */
 .Luke {
   display: flex;
   justify-content: space-evenly;
-  border-radius: 1em;
+  border-radius: 1vw;
   background-color: transparent;
 }
 
-
+/* automatic scroll oriantation */
 #projects, #skills, #contact{
-  scroll-margin-top: 6.5em;
+  scroll-margin-top: 6.5vw;
 }
 
-#about_me{
-  scroll-margin-top: 9em;
-}
-
-
-
+/* the scroll to top teddy bear button */
 .myBtn {
   position: fixed;
   bottom: 0;
   right: 0;
-  border-radius: 1em;
+  border-radius: 1vw;
   z-index: 999;
   cursor: pointer;
-  scroll-margin-top: 9em;
+  scroll-margin-top: 9vw;
 }
 
+/* the picture of the teddy bear */
 .myBtn img{
-  width: 7em;
-  height: 6em;
+  width: 7vw;
+  height: 6vw;
   opacity: 0.3;
   transition: .5s;
 }
 
+/* makes teddy bear button visible on hover */
 .myBtn img:hover{
   opacity: 1;
   transition: .5s;
 }
 
+/* resume image */
 #resume img{
-  border-radius: .5em;
-  height: 75%;
-  width: 75%;
+  border-radius: .5vw;
+  height: 40vw;
+  width: 32vw;
 }
 
-.btn button{
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 10vw;
+  height: 10vw;
+}
+
+/* the download resume button */
+.btn {
   background-color: transparent;
   color: white;
-  font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5vw;
+  width: fit-content;
   text-shadow: 0 0 5px white;
-  height: 5em;
-  width: 10em;
-  margin: 1em;
-  border-radius: 1em;
+  padding: 1vw;
+  border-radius: 1vw;
   transition: .5s;
   border: None;
 }
 
-
-.btn button:hover{
+/* turns download button red on hover */
+.btn:hover{
   background-color: crimson;
   box-shadow: 0 0 10px crimson;
   color: lavender;
   transition: .5s;
 }
 
-.lang {
-  color:rgb(137, 62, 137);
-}
-
+/* contacts link buttons */
 #contact button{
   color: white;
+  font-size: 5vw;
   text-shadow: 0 0 5px white;
   background-color: transparent;
   border: None;
   border-radius: 50%;
-  height: 2em;
-  width: 2em;
+  height:7vw;
+  width: 7vw;
   transition: .5s;
 }
 
+/* turns the contact buttons red on hover */
 #contact button:hover{
   background-color: crimson;
   box-shadow: 0 0 10px crimson;
