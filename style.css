@@ -42,9 +42,9 @@ html{
 /* the link and text in the header */
 .header a, .header p{
     color: lavender;
-    font-size: 1.5vw;
+    font-size: 2vw;
+    letter-spacing: .5vw;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    letter-spacing: 10px;
     border-radius: .5vw;
     text-align: center;
     align-items: center;
@@ -63,30 +63,31 @@ html{
 .page h1{
     color: lavenderblush;
     font-size: 3vw;
-    letter-spacing: .5em;
-    text-shadow: 0px 0px 25px rgb(21, 3, 63);
+    letter-spacing: 1vw;
+    text-shadow: 0px 0px 50vw white;
 }
 
 /* the scroll bar customization */
 ::-webkit-scrollbar {
-    width: .4em;
+    width: .4vw;
   }
   ::-webkit-scrollbar-track {
     background-color: transparent; 
   }
   ::-webkit-scrollbar-thumb {
     background: crimson; 
-    border-radius: .2em;
-    transition: .5s linear;
+    border-radius: .2vw;
+    transition: .5s;
   }
   ::-webkit-scrollbar-thumb:hover {
     background: lavender; 
-    transition: .5s linear;
+    transition: .5s;
     transition-timing-function: ease-in-out;
   }
 
 /* each individual section */
 .sub_class {
+  text-align: center;
     font-size: 1.5vw;
     letter-spacing: .09vw;
     color: lavenderblush;
@@ -102,10 +103,9 @@ html{
 .card {
   background-color: transparent;
   perspective: 30vw;
-  width: 18vw;
-  height: 18vw;
-  float: left;
-  margin-right: 1vw;
+  width: 23vw;
+  height: 23vw;
+  margin-left: 34.9vw;
 }
 
 /* the card picture on the front */
@@ -119,9 +119,7 @@ html{
   position: relative;
   width: 100%;
   height: 100%;
-  margin: 0vw;
-  text-align: center;
-  border-radius: .5vw;
+  border-radius: 50%;
   transition: transform 2s;
   transform-style: preserve-3d;
   font-size: 1vw;
@@ -135,7 +133,7 @@ html{
 /* the front and back of the card */
 .front, .back{
   position: absolute;
-  border-radius: .5vw;
+  border-radius: 50%;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -143,7 +141,8 @@ html{
 
 /* front of the card */
 .front{
-  background-color: transparent;
+  background-color: rgb(21, 3, 63);
+  box-shadow: inset -5vw 5vw 5vw crimson;
 }
 
 /* the teddy bear icon in the middle of the card */
@@ -165,7 +164,7 @@ html{
   width: 100%;
   height: 100%;
   text-align: center;
-  font-size: 1.3vw;
+  font-size: 1.6vw;
   color:rgb(21, 3, 63);
   background-color: white;
   box-shadow: 0 0 20px lavenderblush;
@@ -310,8 +309,9 @@ html{
 
 /* the project buttons */
 .proj-desc button{
+  font-family: 'Times New Roman', Times, serif;
   background-color: rgb(21, 3, 63);
-  color: lavender;
+  color: white;
   text-shadow: 0 0 5px white;
   transition: .5s;
   border-radius: .5vw;
@@ -338,8 +338,8 @@ html{
 }
 
 /* automatic scroll oriantation */
-#projects, #skills, #contact{
-  scroll-margin-top: 6.5vw;
+#about_me, #projects, #Skills_, #contact, #resume{
+  scroll-margin-top: 10vw;
 }
 
 /* the scroll to top teddy bear button */
@@ -367,20 +367,25 @@ html{
   transition: .5s;
 }
 
+
 /* resume image */
-#resume img{
+#resume_img{
   border-radius: .5vw;
-  height: 40vw;
-  width: 32vw;
+  height: 45vw;
+  width: 34.5vw;
 }
 
+/* the box the resume image sits in */
 .img-magnifier-container {
-  position:relative;
+  position: relative;
+  text-align: left;
+  margin-left: 29.5vw;
 }
 
+/* the magnifying glass in the resume image */
 .img-magnifier-glass {
   position: absolute;
-  border: 3px solid #000;
+  border: 3px solid rgb(21, 3, 63);
   border-radius: 50%;
   cursor: none;
   /*Set the size of the magnifier glass:*/
@@ -389,11 +394,14 @@ html{
 }
 
 /* the download resume button */
-.btn {
+#resume a {
   background-color: transparent;
   color: white;
+  display:inline-block;
+  margin-top: 10vh;
   font-size: 1.5vw;
-  width: fit-content;
+  text-decoration: none;
+  width: 10vw;
   text-shadow: 0 0 5px white;
   padding: 1vw;
   border-radius: 1vw;
@@ -402,30 +410,33 @@ html{
 }
 
 /* turns download button red on hover */
-.btn:hover{
+#resume a:hover{
   background-color: crimson;
   box-shadow: 0 0 10px crimson;
   color: lavender;
   transition: .5s;
 }
 
+#contact a{
+  text-decoration: none;
+}
 /* contacts link buttons */
 #contact button{
   color: white;
   font-size: 5vw;
   text-shadow: 0 0 5px white;
   background-color: transparent;
+  box-shadow: inset 0px 0px 0px crimson;
   border: None;
   border-radius: 50%;
   height:7vw;
   width: 7vw;
-  transition: .5s;
+  transition: 1s;
 }
 
 /* turns the contact buttons red on hover */
 #contact button:hover{
-  background-color: crimson;
-  box-shadow: 0 0 10px crimson;
-  color: lavender;
-  transition: .5s;
+  background-color: transparent;
+  box-shadow: inset 100px -100px 5px crimson;
+  transition: 1s;
 }
