@@ -1,6 +1,6 @@
 /* the entire website page */
 html{
-    background-color: rgb(21, 3, 63);
+    background-image: linear-gradient( rgb(21, 3, 63), black);
     scroll-behavior: smooth;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -88,15 +88,14 @@ html{
 /* each individual section */
 .sub_class {
   text-align: center;
-    font-size: 1.5vw;
-    letter-spacing: .09vw;
-    color: lavenderblush;
-    box-shadow: inset 0px 0px 100px rgb(21, 3, 63);
-    margin: .5vw;
-    padding: 2vw;
-    border-radius: .5vw;
-    background-color: transparent;
-    transition: 1s;
+  font-size: 1.5vw;
+  letter-spacing: .09vw;
+  color: lavenderblush;
+  margin: .5vw;
+  padding: 2vw;
+  border-radius: .5vw;
+  background-color: transparent;
+  transition: 1s;
 }
 
 /* the name card in the about me section */
@@ -106,6 +105,7 @@ html{
   width: 23vw;
   height: 23vw;
   margin-left: 34.9vw;
+  margin-bottom: 12vh;
 }
 
 /* the card picture on the front */
@@ -129,6 +129,8 @@ html{
 .card:hover .card-flip{
   transform: rotateY(540deg);
 }
+
+
 
 /* the front and back of the card */
 .front, .back{
@@ -168,6 +170,30 @@ html{
   color:rgb(21, 3, 63);
   background-color: white;
   box-shadow: 0 0 20px lavenderblush;
+}
+
+.about_contact a{
+  text-decoration: none;
+}
+/* about me link buttons */
+.about_contact button{
+  color: white;
+  font-size: 2vw;
+  text-shadow: 0 0 5px white;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 0px crimson;
+  border: None;
+  border-radius: 50%;
+  height:4vw;
+  width: 4vw;
+  transition: 1s;
+}
+
+/* turns the contact buttons red on hover */
+.about_contact button:hover{
+  background-color: transparent;
+  box-shadow: inset 100px -100px 5px crimson;
+  transition: 1s;
 }
 
 /* all of the skills in skills section */
@@ -423,7 +449,7 @@ html{
 /* contacts link buttons */
 #contact button{
   color: white;
-  font-size: 5vw;
+  font-size: 4vw;
   text-shadow: 0 0 5px white;
   background-color: transparent;
   box-shadow: inset 0px 0px 0px crimson;
