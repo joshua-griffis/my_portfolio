@@ -39,15 +39,14 @@
         
         if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
           for (let i = 0; i < imgs.length; i++) {
-            imgs[i].style.display = "none";
+            imgs[i].style.width = "0vw";
+            imgs[i].style.height = "0vw";
             imgs[i].style.transition = "1s";
-            imgs[i].style.transitionTimingFunction = "linear";
-            console.log(imgs[i].style.transitionTimingFunction);
           }
         } else {for (let i = 0; i < imgs.length; i++) {
-            imgs[i].style.display = "block";
-            imgs[i].style.transition = "1s";
-            imgs[i].style.transitionTimingFunction = "linear";
+          imgs[i].style.width = "12vw";
+          imgs[i].style.height = "12vw";
+          imgs[i].style.transition = "1s";
           }
         };
     };
@@ -64,35 +63,18 @@
         <!-- About Me Section -->
         <div class="sub_class" id="about_me">
 
-            <h1><strong>ABOUT ME</strong></h1>
+            <h1><strong><i class="fa-solid fa-sparkles"></i>ABOUT ME<i class="fa-solid fa-sparkles"></i></strong></h1>
 
             <!-- Name Card -->
             <div class="card">
-
-              <div class="card-flip">
-
-                <!-- Front side of the card -->
-                <div class="front">
-                  <img src="images/logos/logo.png" alt="logo">
-                </div>
-
-                <!-- Back side of the card -->
-                <div class="back">
-                  <h3>Joshua <br>Griffis</h3>
-                  <p>(he/him)</p>
-                  <p>Software Developer</p>
-                  <p>Web Designer</p>
-                  <p>Artist</p>
-                </div>
-
                 
-                <!-- Teddy bear in the middle of the card -->
-                <div class="mid">
-
-                  <!-- Ester egg button ;) -->
-                  <button onclick="alert('You Caught Me?! :O You must have a really good eye!! Thank you for checking out my portfolio!!! <3')"><img src="images/logos/icon.png" alt="icon"></button>
-                </div>
-
+              <!-- Back side of the card -->
+              <div class="moon">
+                <h3>Joshua <br>Griffis</h3>
+                <p>(he/him)</p>
+                <p>Software Developer</p>
+                <p>Web Designer</p>
+                <p>Artist</p>
               </div>
 
             </div>
@@ -131,7 +113,7 @@
 
         <!-- Projects Section -->
         <div class="sub_class" id="projects">
-            <h1><strong>PROJECTS</strong></h1>
+            <h1><strong><i class="fa-solid fa-sparkles"></i>PROJECTS<i class="fa-solid fa-sparkles"></i></strong></h1>
             <p>Warning: Some projects do not have a demo just yet.</p>
 
             <!-- Top half -->
@@ -314,7 +296,7 @@
         
         <!-- Skills Section -->
         <div class="sub_class" id="Skills_" name="skills">
-            <h1><strong>SKILLS</strong></h1>
+            <h1><i class="fa-solid fa-sparkles"></i><strong>SKILLS</strong><i class="fa-solid fa-sparkles"></i></h1>
             
             <!-- Languages display -->
             <div id="skills">
@@ -345,7 +327,7 @@
         <!-- Resume Section -->
         <div class="sub_class" id="resume">
 
-          <h1><strong>RESUME</strong></h1>
+          <h1><i class="fa-solid fa-sparkles"></i><strong>RESUME</strong><i class="fa-solid fa-sparkles"></i></h1>
 
           <div class="img-magnifier-container">
             <!-- Resume image -->
@@ -442,8 +424,10 @@
 
         <!-- Contacts Section -->
         <div class="sub_class" id="contact">
-            <h1><strong>CONTACT</strong></h1>
-            <h2>Feel Free to Contact at any time!<br> joshuagiff03@gmail.com</h2>
+            <h1><i class="fa-solid fa-sparkles"></i><strong>CONTACT</strong><i class="fa-solid fa-sparkles"></i></h1>
+            <h2>Feel Free to Contact at any time!<br><i class="fa-solid fa-paper-plane"></i> Personal Email: joshuagiff03@gmail.com
+            <br><i class="fa-solid fa-paper-plane"></i> Base Camp Email: jgriffis23@basecampcodingacademy.org
+            <br><i class="fa-solid fa-phone"></i> (662)-380-6187</h2>
 
             <!-- Email link button -->
             <a href="mailto:joshuagiff03@gmail.com" title="Message me through Email">
@@ -458,7 +442,7 @@
             <!-- Linkedin link button -->
             <a href="https://www.linkedin.com/in/joshua-griffis-b2817a242/" target="_blank" title="Connect to my Linkedin">
               <button><i class="fa-brands fa-github"></i></button>
-            </a>
+            </a> 
         
       </div>
 
