@@ -31,6 +31,13 @@
     
     <!-- Makes the header pictures disappear when you scroll -->
     <script>
+      $(document).on('mousemove', function(e){
+        $('.glowing-dot').css({
+          left:  e.pageX,
+          top:   e.pageY
+            });
+        });
+
     window.onscroll = function() {scrollFunction()};
 
       function scrollFunction() {
@@ -436,12 +443,12 @@
 
             <!-- Github link button -->
             <a href="https://github.com/joshua-griffis" target="_blank" title="Checkout my Projects on Github">
-              <button><i class="fa-brands fa-linkedin"></i></button>
+              <button><i class="fa-brands fa-github"></i></button>
             </a>
 
             <!-- Linkedin link button -->
             <a href="https://www.linkedin.com/in/joshua-griffis-b2817a242/" target="_blank" title="Connect to my Linkedin">
-              <button><i class="fa-brands fa-github"></i></button>
+              <button><i class="fa-brands fa-linkedin"></i></button>
             </a> 
         
       </div>
