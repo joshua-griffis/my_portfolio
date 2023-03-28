@@ -31,14 +31,8 @@
     
     <!-- Makes the header pictures disappear when you scroll -->
     <script>
-      $(document).on('mousemove', function(e){
-        $('.glowing-dot').css({
-          left:  e.pageX,
-          top:   e.pageY
-            });
-        });
 
-    window.onscroll = function() {scrollFunction()};
+      window.onscroll = function() {scrollFunction()};
 
       function scrollFunction() {
       
@@ -50,14 +44,16 @@
             imgs[i].style.height = "0vw";
             imgs[i].style.transition = "1s";
           }
-        } else {for (let i = 0; i < imgs.length; i++) {
-          imgs[i].style.width = "12vw";
-          imgs[i].style.height = "12vw";
-          imgs[i].style.transition = "1s";
+        } else {
+          for (let i = 0; i < imgs.length; i++) {
+            imgs[i].style.width = "12vw";
+            imgs[i].style.height = "12vw";
+            imgs[i].style.transition = "1s";
           }
-        };
-    };
-    </script>
+        }
+      }
+      </script>
+  
     
     <!-- scroll to top button -->
     <div class="myBtn">
