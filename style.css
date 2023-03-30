@@ -116,9 +116,16 @@ html{
   box-shadow: 0 0 20px lavenderblush;
 }
 
+.about_contact {
+  text-align: center;
+  text-decoration: none;
+  margin: 4vw;
+}
+
 .about_contact a{
   text-decoration: none;
 }
+
 /* about me link buttons */
 .about_contact button{
   color: white;
@@ -410,3 +417,4 @@ html{
   box-shadow: inset 100px -100px 5px crimson;
   transition: 1s;
 }
+

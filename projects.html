@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobilescreen.css">
+    <link rel="shortcut icon" href="images/logos/icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e411a86564.js" crossorigin="anonymous"></script>
+    <title>Projects</title>
+</head>
+<body>
+
+    <!-- Header/navigation bar -->
+    <div class="header" id="navbar">
+      
+        <a href="projects.html" title="Projects"><img class="navimg" src="images/logos/projects logo copy.png" alt="cloud"><p class="headerText">Projects</p></a>
+        <a href="skills.html" title="Skills"><img class="navimg" src="images/logos/skills logo copy.png" alt="cloud"><p class="headerText">Skills</p></a>
+        <a href="index.html" title="About Me"><img class="navimg" src="images/logos/logo copy 2.png" alt="moon"><p class="headerText">About Me</p></a>
+        <a href="index.html#resume" title="Resume"><img class="navimg" src="images/logos/Resume icon copy.png" alt="cloud"><p class="headerText">Resume</p></a>
+        <a href="contact.html" title="Contacts"><img class="navimg" src="images/logos/contact logo copy.png" alt="cloud"><p class="headerText">Contacts</p></a>
+      </div>
+      
+      <!-- Makes the header pictures disappear when you scroll -->
+      <script>
+  
+        window.onscroll = function() {scrollFunction()};
+  
+        function scrollFunction() {
+        
+          const imgs = document.getElementsByClassName("navimg"); 
+          
+          if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+            for (let i = 0; i < imgs.length; i++) {
+              imgs[i].style.width = "0vw";
+              imgs[i].style.height = "0vw";
+              imgs[i].style.transition = "1s";
+            }
+          } else {
+            for (let i = 0; i < imgs.length; i++) {
+              imgs[i].style.width = "12vw";
+              imgs[i].style.height = "12vw";
+              imgs[i].style.transition = "1s";
+            }
+          }
+        }
+        </script>
+
+    <!-- Projects Section -->
+    <div class="sub_class" id="projects">
+        <h1><strong><i class="fa-solid fa-sparkles"></i>PROJECTS<i class="fa-solid fa-sparkles"></i></strong></h1>
+        <p>Warning: Some projects do not have a demo.</p>
+
+        <div class="Luke">
+
+          <!-- project x -->
+          <div class="project">
+            <div class="proj-flip">
+
+              <div class="proj-img"><img src="images/arc foundation.png" alt="arc"></div>
+                
+              <div class="proj-desc">
+                
+                <p><strong>X<br>Unit Eight Project<br> A.R.C. Foundation</strong></p>
+                  <p>The ARC (Anomaly Research and Containment) Foundation is a secret organization that locates, contains and researches any anomalous, hazardous or otherwise possibly dangerous entities or artifacts. This project uses Java and Spring to create, read, update, and delete anomalies from a sql database.</p>
+                  <p>Group Members: <a title="Checkout their Portfolio?" href="https://opalescenthearts.github.io/Amber_Montgomery_Portfolio/" target="_blank">Amber Montgomery</a>, <a title="Checkout their Portfolio?" href="https://mike469.github.io/Portfolio/" target="_blank">Mike Duarte</a>, <a title="Checkout their Portfolio?" href="https://lukemurchison.github.io/Portfolio/" target="_blank">Luke Murchison</a></p>
+                
+                  <p class="lang">Languages used: Java, SQL, Spring</p>
+
+                <a onclick="alert('Sorry, There isnt a Demo for this project just yet but you can check out the code for it!')">
+                  <button><i class="fa-regular fa-sparkles"></i>Demo</button></a>
+                
+                <a href="https://github.com/joshua-griffis/unit-viii-project" target="_blank">
+                  <button><i class="fa-solid fa-code"></i>Code</button></a>
+
+                <a href="https://www.canva.com/design/DAFeZR9By44/YDf-26ubx-8RyONlGHhhYA/view?utm_content=DAFeZR9By44&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+                  <button>Presentation</button>
+                </a>
+
+               </div>
+
+              <div class="mid"><img src="images/logos/icon.png" alt="icon"></div>
+                
+            </div>
+          </div>
+        </div>
+        
+        <!-- Top -->
+        <div class="Luke">
+          
+          <!-- Project ix -->
+          <div class="project">
+            <div class="proj-flip">
+
+              <div class="proj-img"><img src="images/ancient weapons.png" alt="ancient weapons"></div>
+                
+              <div class="proj-desc">
+                
+                <p><strong>IX<br>Unit Seven Project<br> Historical Weapons Shop</strong></p>
+                  <p>A terminal based project where we created a sql database of weapons used in the ancient world and used java to access that database.</p>
+                  <p>Group Members: <a title="Checkout their Portfolio?" href="https://opalescenthearts.github.io/Amber_Montgomery_Portfolio/" target="_blank">Amber Montgomery</a>, <a href="https://lefty527.github.io/My-Portfolio/" title="Checkout their Portfolio?" target="_blank">Lukas Strider</a>, <a href="https://angela-gr.github.io/Portfoilo/" title="Checkout their Portfolio?" target="_blank">Angela Reeves</a></p>
+                
+                  <p class="lang">Languages used: Java, SQL</p>
+
+                <a onclick="alert('Sorry, There isnt a Demo for this project just yet but you can check out the code for it!')">
+                  <button><i class="fa-regular fa-sparkles"></i>Demo</button></a>
+                
+                <a href="https://github.com/joshua-griffis/Unit-vii-project/blob/main/UNIT-7-PROJECT/src/main/java/org/example/Main.java" target="_blank">
+                  <button><i class="fa-solid fa-code"></i>Code</button></a>
+
+                <a href="https://www.canva.com/design/DAFa3XH70Eo/BOpID7GN-U9EIHSWzqVbiw/view?utm_content=DAFa3XH70Eo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+                  <button>Presentation</button>
+                </a>
+
+               </div>
+
+              <div class="mid"><img src="images/logos/icon.png" alt="icon"></div>
+                
+            </div>
+          </div>
+
+           <!-- Project viii -->
+           <div class="project">
+            <div class="proj-flip">
+
+              <div class="proj-img"><img src="images/poker.png" alt="poker"></div>
+                
+              <div class="proj-desc">
+                
+                <p><strong>VIII<br>Texas Hold'em Poker</strong></p>
+                  <p>A simple terminal based Poker game made with Java! This was our week 2 technical project in our unit of Java, Unit Vii.</p>
+                  <p class="lang">Languages used: Java</p>
+
+                <a href="https://replit.com/@JoshuaGriffis1/poker?v=1" target="_blank">
+                  <button><i class="fa-regular fa-sparkles"></i>Demo</button></a>
+                
+                <a href="https://replit.com/@JoshuaGriffis1/poker?v=1#Main.java" target="_blank">
+                  <button><i class="fa-solid fa-code"></i>Code</button></a>
+
+               </div>
+
+              <div class="mid"><img src="images/logos/icon.png" alt="icon"></div>
+                
+            </div>
+          </div>
+
+                 <!-- Project vii -->
+          <div class="project">
+            <div class="proj-flip">
+
+              <div class="proj-img"><img src="images/jsonjepardy.png" alt="jsonjepardy"></div>
+                
+              <div class="proj-desc">
+                
+                <p><strong>VII<br>Unit Six Project<br> JSON JEOPARDY</strong></p>
+                  <p>A trivia game that pulls questions from a JSON api using javascript.</p>
+                  <p>Group Members: <a title="Checkout their Portfolio?" href="https://mike469.github.io/Portfolio/" target="_blank">Mike Duarte</a>, <a href="https://kevin18ramos.github.io/portfolio-kevin/" title="Checkout their Portfolio?" target="_blank">Kevin Ramos</a></p>
+                <p class="lang">Languages used: JavaScript, Html and Css</p>
+
+                <a href="https://joshua-griffis.github.io/unit-six-project/" target="_blank">
+                  <button><i class="fa-regular fa-sparkles"></i>Demo</button></a>
+                
+                <a href="https://github.com/joshua-griffis/unit-six-project" target="_blank">
+                  <button><i class="fa-solid fa-code"></i>Code</button></a>
+
+                <a href="https://www.canva.com/design/DAFX7mnScGI/60u0FRb1nrZ_GmcHd63E6w/view?utm_content=DAFX7mnScGI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+                  <button>Presentation</button></a>
+              </div>
+
+              <div class="mid"><img src="images/logos/icon.png" alt="icon"></div>
+                
+            </div>
+          </div>
+        </div>
+
+        <!-- middle -->
+        <div class="Luke">
+
+          <!-- Project vi -->
+          <div class="project">
+            <div class="proj-flip">
+
+              <div class="proj-img"><img src="images/red_hand.png" alt="Red Hand"></div>
+                
+              <div class="proj-desc">
+                
+                <p><strong>VI<br>Unit Five Project<br> The Red Hand Bounty Board</strong></p>
+                  <p>A Bounty Board website where you can sign up as either and customer or a Bounty hunter!</p>
+                  <p>Group Members: <a title="Checkout their Portfolio?" href="https://mike469.github.io/Portfolio/" target="_blank">Mike Duarte</a>, <a href="https://lefty527.github.io/My-Portfolio/" title="Checkout their Portfolio?" target="_blank">Lukas Strider</a>, <a href="https://jdumbs.github.io/portfolio/" title="Checkout their Portfolio?" target="_blank">JW</a></p>
+                <p class="lang">Languages used: Django, Python, Html, CSS</p>
+
+                <a onclick="alert('Sorry, There isnt a Demo for this project just yet but you can check out the code for it!')">
+                  <button><i class="fa-regular fa-sparkles"></i>Demo</button></a>
+                
+                <a href="https://github.com/joshua-griffis/Unit-V-project/tree/main/Unit%20V%20project" target="_blank">
+                  <button><i class="fa-solid fa-code"></i>Code</button></a>
+              </div>
+
+              <div class="mid"><img src="images/logos/icon.png" alt="icon"></div>
+                
+            </div>
+          </div>
+
+          <!-- Project v -->
+          <div class="project">
+            <div class="proj-flip">
+
+              <div class="proj-img"><img src="images/crud.png" alt="Red Hand"></div>
+                
+              <div class="proj-desc">
+                
+                <p><strong>V<br>Authentication Project<br> Character Creator</strong></p>
+                <p>An authentication CRUD website for characters. Create, Read, Update, and Delete a Character.</p>
+                <p class="lang">Languages used: Django, Python, Html, CSS</p> 
+
+                <a onclick="alert('Sorry, There isnt a Demo for this project just yet but you can check out the code for it!')" ><button><i class="fa-regular fa-sparkles"></i>Demo</button></a>
+                
+                <a href="https://github.com/joshua-griffis/auth-project" target="_blank"><button><i class="fa-solid fa-code"></i>Code</button></a>
+               
+              </div>
+
+              <div class="mid"><img src="images/logos/icon.png" alt="icon"></div>
+                
+            </div>
+          </div>
+
+          <!-- Project iv -->
+          <div class="project">
+            <div class="proj-flip">
+
+              <div class="proj-img"><img src="images/fanticy.png" alt="Fantasy Inventory"></div>
+                
+              <div class="proj-desc">
+                
+                <p><strong>IV<br>Unit Four Project<br> Fantasy Inventory</strong></p>
+                <p>Fantasy Inventory, an online shop that sells items from fiction!</p> 
+                <p>Group Members: <a href="https://dylan042106.github.io/portfolio/" title="Checkout their Portfolio?" target="_blank">Dylan Herring</a>, <a href="https://bcaustingithub.github.io/Portfolio/" title="Checkout their Portfolio?" target="_blank">Brooks Austin</a>, <a href="https://angela-gr.github.io/Portfoilo/" title="Checkout their Portfolio?" target="_blank">Angela Reeves</a></p>
+                <p class="lang">Languages used: Django, Python, HTML, CSS</p>
+
+                <a onclick="alert('Sorry, There isnt a Demo for this project just yet but you can check out the code for it!')" >
+                  <button><i class="fa-regular fa-sparkles"></i>Demo</button>
+                </a>
+                
+                <a href="https://github.com/joshua-griffis/unit-VI-project/tree/main/unit_4_project-master" target="_blank">
+                  <button><i class="fa-solid fa-code"></i>Code</button>
+                </a>
+                
+                <a href="https://www.canva.com/design/DAFPfbupPxg/Z7k1P7C3klemN1AQYI3z9A/view?utm_content=DAFPfbupPxg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+                  <button>Presentation</button>
+                </a>
+                
+              </div>
+
+              <div class="mid"><img src="images/logos/icon.png" alt="icon"></div>
+                
+            </div>
+          </div> 
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="Luke">
+
+          <!-- Project iii -->
+          <div class="project">
+            <div class="proj-flip">
+
+              <div class="proj-img"><img src="images/logos/logo.png" alt="moon"></div>
+                
+              <div class="proj-desc">
+                
+                <p><strong>III<br>Unit Three Project<br> Portfolio</strong></p>
+                  <p>Our unit iii project is what you are looking at right now. Our portfolios! Feel free to check out the code for my portfolio or check out the Base Camp Coding Academy website where its displayed!</p>
+                  <p class="lang">Languages used: Html, CSS, JavaScript</p>
+
+                <a href="https://basecampcodingacademy.org/student-portfolios/" target="_blank" >
+                  <button><i class="fa-regular fa-sparkles"></i>BCCA</button>
+                </a>
+                
+                <a href="https://github.com/joshua-griffis/my_portfolio" target="_blank">
+                  <button><i class="fa-solid fa-code"></i>Code</button>
+                </a>
+
+                <a href="https://www.canva.com/design/DAFMZRzWxa8/pVl3OcUn3CrtmiQ8Wfy_2A/view?utm_content=DAFMZRzWxa8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+                  <button>Presentation</button>
+                </a>
+              </div>
+
+              <div class="mid"><img src="images/logos/icon.png" alt="icon"></div>
+                
+            </div>
+          </div>
+
+          <!-- Project ii -->
+          <div class="project">
+            <div class="proj-flip">
+
+              <div class="proj-img"><img src="images/woah.webp" alt="Albert Einstein"></div>
+                
+              <div class="proj-desc">
+                
+                <p><strong>II<br>G.O.A.T Project</strong></p>
+                <p>A website about the Greatest Of All Time!
+                This was our first html and css project!
+                (Not tested for smaller screens)</p>
+                <p class="lang">Languages used: HTML, CSS</p>
+
+                <a href="https://joshua-griffis.github.io/goat-project/"  target="_blank">
+                  <button><i class="fa-regular fa-sparkles"></i>Demo</button></a>
+                
+                <a href="https://github.com/joshua-griffis/goat-project" target="_blank">
+                  <button><i class="fa-solid fa-code"></i>Code</button></a>
+                
+              </div>
+
+              <div class="mid"><img src="images/logos/icon.png" alt="icon"></div>
+                
+            </div>
+          </div>  
+
+          <!-- Project i -->
+           <div class="project">
+            <div class="proj-flip">
+
+              <div class="proj-img"><img src="images/haunted house.png" alt="haunted house"></div>
+                
+              <div class="proj-desc">
+                
+                <p><strong>I<br>Unit 1 Project<br> Hide and Seek</strong></p>
+                <p>A Choice-based short story where the user explores a haunted house!
+                This was our first group project, I partnered with Anna McLeod for this project!</p>
+                <p>Group Members: <a href="https://annanmcleod.github.io/portfolio/" title="Checkout their Portfolio?" target="_blank">Anna McLeod</a></p>
+                <p class="lang">Languages used: Python</p>
+
+                <a href="http://replit.com/@JoshuaGriffis1/group-2-unit-project?v=1" target="_blank">
+                  <button><i class="fa-regular fa-sparkles"></i>Demo</button>
+                </a>
+                
+                <a href="https://replit.com/@JoshuaGriffis1/group-2-unit-project?v=1#main.py" target="_blank">
+                  <button><i class="fa-solid fa-code"></i>Code</button>
+                </a>
+
+                <a href="https://www.canva.com/design/DAFFjukSbRM/FoivaG93z81RbVBPnyhKNQ/view?utm_content=DAFFjukSbRM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+                  <button>Presentation</button>
+                </a>
+               
+              </div>
+
+              <div class="mid"><img src="images/logos/icon.png" alt="icon"></div>
+                
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+    <div class="about_contact">
+
+            <!-- Email link button -->
+            <a href="mailto:joshuagiff03@gmail.com" title="Message me through Email">
+              <button><i class="fa-solid fa-envelope"></i></button>
+            </a>
+
+            <!-- Github link button -->
+            <a href="https://github.com/joshua-griffis" target="_blank" title="Checkout my Projects on Github">
+              <button><i class="fa-brands fa-github"></i></button>
+            </a>
+
+            <!-- Linkedin link button -->
+            <a href="https://www.linkedin.com/in/joshua-griffis-b2817a242/" target="_blank" title="Connect to my Linkedin">
+              <button><i class="fa-brands fa-linkedin"></i></button>
+            </a>
+
+            <!-- Canva presentaion link-->
+            <a href="https://www.canva.com/design/DAFDCEHx8n4/wrvnkUZZsNeOC0q8m5im1g/view?utm_content=DAFDCEHx8n4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" title="Check out my about me canva Presentation!!">
+              <button><i class="fa-solid fa-star-and-crescent"></i></button>
+            </a>
+
+            <a href="https://replit.com/@JoshuaGriffis1" target="_blank" title="Visit my Replit">
+              <button><i class="fa-sharp fa-solid fa-sliders"></i></button>
+            </a>
+
+        </div>
+</body>
+</html>

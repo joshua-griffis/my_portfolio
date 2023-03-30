@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobilescreen.css">
+    <link rel="shortcut icon" href="images/logos/icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e411a86564.js" crossorigin="anonymous"></script>
+    <title>Skills</title>
+</head>
+<body>
+
+    <!-- Header/navigation bar -->
+    <div class="header" id="navbar">
+      
+        <a href="projects.html" title="Projects"><img class="navimg" src="images/logos/projects logo copy.png" alt="cloud"><p class="headerText">Projects</p></a>
+        <a href="skills.html" title="Skills"><img class="navimg" src="images/logos/skills logo copy.png" alt="cloud"><p class="headerText">Skills</p></a>
+        <a href="index.html" title="About Me"><img class="navimg" src="images/logos/logo copy 2.png" alt="moon"><p class="headerText">About Me</p></a>
+        <a href="index.html#resume" title="Resume"><img class="navimg" src="images/logos/Resume icon copy.png" alt="cloud"><p class="headerText">Resume</p></a>
+        <a href="#contact" title="Contacts"><img class="navimg" src="images/logos/contact logo copy.png" alt="cloud"><p class="headerText">Contacts</p></a>
+      </div>
+      
+      <!-- Makes the header pictures disappear when you scroll -->
+      <script>
+  
+        window.onscroll = function() {scrollFunction()};
+  
+        function scrollFunction() {
+        
+          const imgs = document.getElementsByClassName("navimg"); 
+          
+          if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+            for (let i = 0; i < imgs.length; i++) {
+              imgs[i].style.width = "0vw";
+              imgs[i].style.height = "0vw";
+              imgs[i].style.transition = "1s";
+            }
+          } else {
+            for (let i = 0; i < imgs.length; i++) {
+              imgs[i].style.width = "12vw";
+              imgs[i].style.height = "12vw";
+              imgs[i].style.transition = "1s";
+            }
+          }
+        }
+        </script>
+
+    <!-- Skills Section -->
+    <div class="sub_class" id="Skills_" name="skills">
+        <h1><i class="fa-solid fa-sparkles"></i><strong>SKILLS</strong><i class="fa-solid fa-sparkles"></i></h1>
+        
+        <!-- Languages display -->
+        <div id="skills">
+          
+          <div class="container" id="python" title="Python"><img src="images/logos/contact logo copy.png" alt="cloud"><p>print("<b>Python</b>")</p></div>
+        
+          <div class="container" id="git" title="Git/Github"><img src="images/logos/projects logo copy.png" alt="cloud"><p>/<b>Git</b>/<b>hub</b>/</p></div>
+        
+          <div class="container" id="html" title="HTML"><img src="images/logos/Resume icon copy.png" alt="cloud"><p>&lt;/<b>HTML</b>&gt;</p></div>
+          
+          <div class="container" id="css" title="CSS"><img src="images/logos/skills logo copy.png" alt="cloud"><p>.<b>CSS</b>{}</p></div>
+        
+          <div class="container" id="django" title="Django"><img src="images/logos/contact logo copy.png" alt="cloud"><p>{% <b>Django</b> %}</p></div>
+          
+          <div class="container" id="js" title="JavaScript"><img src="images/logos/projects logo copy.png" alt="cloud"><p><b>Java</b>&lt;/<b>Script</b>&gt;</p></div>
+
+          <div class="container" id="java" title="Java"><img src="images/logos/Resume icon copy.png" alt="cloud"><p>private String <b>Java</b>() {}</p></div>
+
+          <div class="container" id="sql" title="SQL"><img src="images/logos/skills logo copy.png" alt="cloud"><p>SELECT * FROM <b>SQL</b>;</p></div>   
+
+          <div class="container" id="spring" title="Spring"><img src="images/logos/projects logo copy.png" alt="cloud"><p>@<b>Spring</b></p></div>
+        
+        </div>
+    </div>
+
+    <!-- contact link buttons in about me -->
+    <div class="about_contact" id="skill_links">
+
+        <!-- Email link button -->
+        <a href="mailto:joshuagiff03@gmail.com" title="Message me through Email">
+          <button><i class="fa-solid fa-envelope"></i></button>
+        </a>
+
+        <!-- Github link button -->
+        <a href="https://github.com/joshua-griffis" target="_blank" title="Checkout my Projects on Github">
+          <button><i class="fa-brands fa-github"></i></button>
+        </a>
+
+        <!-- Linkedin link button -->
+        <a href="https://www.linkedin.com/in/joshua-griffis-b2817a242/" target="_blank" title="Connect to my Linkedin">
+          <button><i class="fa-brands fa-linkedin"></i></button>
+        </a>
+
+        <!-- Canva presentaion link-->
+        <a href="https://www.canva.com/design/DAFDCEHx8n4/wrvnkUZZsNeOC0q8m5im1g/view?utm_content=DAFDCEHx8n4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" title="Check out my about me canva Presentation!!">
+          <button><i class="fa-solid fa-star-and-crescent"></i></button>
+        </a>
+
+        <a href="https://replit.com/@JoshuaGriffis1" target="_blank" title="Visit my Replit">
+            <button><i class="fa-sharp fa-solid fa-sliders"></i></button>
+        </a>
+
+    </div>
+</body>
+</html>
