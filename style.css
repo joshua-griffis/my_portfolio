@@ -395,8 +395,39 @@ html{
 
 #contact a{
   text-decoration: none;
-
 }
+
+#contact h1{
+  margin: 4vw;
+}
+
+#contact_text {
+  text-align: left;
+}
+
+#contact_form {
+  text-align: center;
+  margin: 3vw;
+}
+
+#contact_form input, #contact_form textarea{
+  border-radius: 1vw;
+  padding: .5vw;
+  border: none;
+  margin: .5vw;
+  font-size: 2vw;
+  color: white;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: transparent;
+  transition: 1s;
+}
+
+#contact_form input:hover, #contact_form textarea:hover{
+  box-shadow: 0 0 3vw crimson;
+  background-color: crimson;
+  transition: 1s;
+}
+
 /* contacts link buttons */
 #contact button{
   color: white;
@@ -409,6 +440,10 @@ html{
   height:7vw;
   width: 7vw;
   transition: 1s;
+}
+
+.contact_links {
+  margin: 4vw;
 }
 
 /* turns the contact buttons red on hover */

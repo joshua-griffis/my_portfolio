@@ -27,18 +27,62 @@
         <a href="contact.html" title="Contacts"><img class="navimg" src="images/logos/contact logo copy.png" alt="cloud"><p class="headerText">Contacts</p></a>
       </div>
 
+      <!-- Makes the header pictures disappear when you scroll -->
+      <script>
+  
+        window.onscroll = function() {scrollFunction()};
+  
+        function scrollFunction() {
+        
+          const imgs = document.getElementsByClassName("navimg"); 
+          
+          if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+            for (let i = 0; i < imgs.length; i++) {
+              imgs[i].style.width = "0vw";
+              imgs[i].style.height = "0vw";
+              imgs[i].style.transition = "1s";
+            }
+          } else {
+            for (let i = 0; i < imgs.length; i++) {
+              imgs[i].style.width = "12vw";
+              imgs[i].style.height = "12vw";
+              imgs[i].style.transition = "1s";
+            }
+          }
+        }
+        </script>
+
        <!-- Contacts Section -->
        <div class="sub_class" id="contact">
         <h1><i class="fa-solid fa-sparkles"></i><strong>CONTACT</strong><i class="fa-solid fa-sparkles"></i></h1>
-        <h2>Feel Free to Contact at any time!<br><i class="fa-solid fa-paper-plane"></i> Personal Email: joshuagiff03@gmail.com
-        <br><i class="fa-solid fa-paper-plane"></i> Base Camp Email: jgriffis23@basecampcodingacademy.org
-        <br><i class="fa-solid fa-phone"></i> (662)-380-6187</h2>
+        <div id="contact_text">
+          <h3>Feel Free to Contact at any time!<br><i class="fa-solid fa-paper-plane"></i> Personal Email: joshuagiff03@gmail.com
+          <br><i class="fa-solid fa-paper-plane"></i> Base Camp Email: jgriffis23@basecampcodingacademy.org
+          <br><i class="fa-solid fa-phone"></i> (662)-380-6187</h3>
 
+          <div id="contact_form">
+
+            <form action="action_page.php" method="post">
+
+              <input type="text" id="name" name="name" placeholder="Your Name.."><br>
+          
+              <input type="email" id="email" name="email" placeholder="Your Email.."><br>
+
+              <input type="text" id="subject" name="subject" placeholder="Subject.."><br>
+          
+              <textarea id="message" name="message" placeholder="Message.." style="height:200px"></textarea><br>
+          
+              <input type="submit" name="submit" value="Send"><br>
+          
+            </form>
+          </div>
+        </div>
+
+       <div class="contact_links">
         <!-- Email link button -->
         <a href="mailto:joshuagiff03@gmail.com" title="Message me through Email">
           <button><i class="fa-solid fa-envelope"></i></button>
         </a>
-        
 
         <!-- Github link button -->
         <a href="https://github.com/joshua-griffis" target="_blank" title="Checkout my Projects on Github">
@@ -58,6 +102,7 @@
         <a href="https://replit.com/@JoshuaGriffis1" target="_blank" title="Visit my Replit">
         <button><i class="fa-sharp fa-solid fa-sliders"></i></button>
         </a>
+      </div>
     
   </div>
 </body>
